@@ -1,0 +1,28 @@
+!!!
+html(lang="en")
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+		<!--[if lte IE 8]>
+		link(rel='stylesheet', type='text/css', href='../../css/ie8.css')
+		<![endif]-->
+
+		<!--[if gte IE 9]>
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<![endif]-->
+
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+	body.experience
+		div.kill-overflow
+			div.header
+				div.logo
+					span A
+			div.side-bar
+			div.main
+		script.
+			//var map = L.map('main').setView([51.505, -0.09], 12);
+			//L.tileLayer('http://a.tiles.mapbox.com/v3/aggregus.map-keakb9ot/{z}/{x}/{y}.png').addTo(map)
