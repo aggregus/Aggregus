@@ -15,6 +15,7 @@
     "nodemailer": "~0.4.1",
     "redis": "~0.8.4",
     "request": "~2.22.0",
+    "stripe": "git://github.com/wrenoud/node-stripe.git",
     "stylus": "~0.36.1",
     "underscore": "~1.4.4"
   },
