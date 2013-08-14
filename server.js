@@ -1,3 +1,6 @@
+// load secrets
+var secrets = require('./secrets.js')('dev');
+
 // Load central dependencies
 
 express = require('express');
@@ -5,7 +8,7 @@ stylus = require('stylus');
 crypto = require('crypto');
 jade = require('jade');
 mongoose = require('mongoose');
-mandrill = require('node-mandrill')('0bFNPDenlDiZtu7aXujDQQ');
+mandrill = require('node-mandrill')(secrets.mandrill_api_key);
 MemoryStore = require('connect').session.MemoryStore;
 fs = require('fs');
 querystring = require('querystring');
@@ -14,17 +17,14 @@ util = require('util');
 
 // Configure Stripe
 
-var stripe_api_key = 'sk_live_ISVAQlarU26MCDyLBTl6ipOx';
-stripe = require('./manual_modules/stripe')(stripe_api_key);
+stripe = require('./manual_modules/stripe')(secrets.stripe_api_key);
 	
 // Mongoose Connection
 
 var db = mongoose.connection;
 
-var dbURI = 'mongodb://aggreadm:quoxly123@ds037688.mongolab.com:37688/aggregus-pro';
-
 db.on('disconnected', function() {
-	mongoose.connect(dbURI, {server:{auto_reconnect:true}});
+	mongoose.connect(secrets.dbURI, {server:{auto_reconnect:true}});
 });
 
 db.on('error', function(error) {
@@ -32,7 +32,7 @@ db.on('error', function(error) {
   mongoose.disconnect();
 });
 
-mongoose.connect(dbURI, {server:{auto_reconnect:true}});
+mongoose.connect(secrets.dbURI, {server:{auto_reconnect:true}});
 
 // Hello there, gorgeous.
 
@@ -55,7 +55,7 @@ app
   .use(express.bodyParser())
   .use(express.cookieParser())
 	.use(express.cookieSession({
-		secret: "324CGDFG645165687678687687687Gvrf32fsdf5345738465834658634544dD0D",
+		secret: secrets.session_salt,
 		cookie: {path:'/', httpOnly: true, maxAge: 2*60*60*1000}
 	}))
   .use(app.router)
