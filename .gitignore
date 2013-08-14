@@ -1,3 +1,22 @@
+#############################################
+# Files stored elsewhere but needed locally #
+#############################################
+
+# node modules are handles by npm, no need to store in this repo
 node_modules/
+
+# "hide yo kids, hide yo wife, and hide yo husband"
+# lets not post api keys etc to git
 secrets.js
+
+
+##########################
+# System or editor files #
+##########################
+
+# gedit backup files
 *~
+
+# Mac folder options
+*/.DS_Store
+.DS_Store
