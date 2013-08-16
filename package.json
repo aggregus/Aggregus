@@ -17,7 +17,8 @@
     "request": "~2.22.0",
     "stripe": "git://github.com/wrenoud/node-stripe.git",
     "stylus": "~0.36.1",
-    "underscore": "~1.4.4"
+    "underscore": "~1.4.4",
+    "connect-mongo": "~0.3.3"
   },
   "devDependencies": {},
   "scripts": {

@@ -1,5 +1,4 @@
-module.exports = function(app) {
-	app.get('/api/notification', function(req, res) {
+function get(req, res) {
 		
 		var notification = req.query.notification;
 
@@ -16,9 +15,9 @@ module.exports = function(app) {
 				res.send(404)
 			}
 		});
-	});
+	}
 	
-	app.post('/api/notification', function(req, res) {
+function post(req, res) {
 		var notification = req.body.notification;
 		
 		var newNotification = new Notification(notification);
@@ -33,9 +32,9 @@ module.exports = function(app) {
 			}
 		});
 
-	});
+	}
 	
-	app.put('/api/notification', function(req, res) {
+function put(req, res) {
 		var notification = req.body.notification;
 
 		Notification.update(
@@ -55,9 +54,9 @@ module.exports = function(app) {
 					res.send(404)
 				}
 			});
-	});
+	}
 	
-	app.delete('/api/notification', function(req, res) {
+function del(req, res) {
 		var notification = req.body.notification;
 
 		Notification.update(
@@ -78,5 +77,13 @@ module.exports = function(app) {
 					res.send(404);
 				}
 			});
-		});
-}
+		}
+
+var route = '/api/notification';
+
+module.exports.bindings = [
+    { "method": "get", "route": route, "callback": get },
+    { "method": "post", "route": route, "callback": post },
+    { "method": "put", "route": route, "callback": put },
+    { "method": "del", "route": route, "callback": del }
+];

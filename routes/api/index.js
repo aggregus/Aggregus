@@ -1,9 +1,8 @@
-module.exports = function(app) {
-  require('./user')(app);
-  require('./notification')(app);
-  require('./experience')(app);
-  require('./booking')(app);
-  require('./message')(app);
-  require('./review')(app);
-  require('./heart')(app);
-}
+module.exports.user = require('./user');
+module.exports.notification = require('./notification');
+module.exports.experience = require('./experience');
+module.exports.booking = require('./booking');
+module.exports.message = require('./message');
+module.exports.review = require('./review');
+module.exports.heart = require('./heart');
+

@@ -1,5 +1,4 @@
-module.exports = function(app) {
-	app.get('/api/heart', function(req, res) {
+function get(req, res) {
 		
 		var heart = req.query.heart;
 
@@ -16,9 +15,9 @@ module.exports = function(app) {
 				res.send(404)
 			}
 		});
-	});
+	}
 	
-	app.post('/api/heart', function(req, res) {
+function post(req, res) {
 		var heart = req.body.heart;
 		
 		var newHeart = new Heart(heart);
@@ -35,9 +34,9 @@ module.exports = function(app) {
 			}
 		});
 
-	});
+	}
 	
-	app.put('/api/heart', function(req, res) {
+function put(req, res) {
 		var heart = req.body.heart;
 
 		Heart.update(
@@ -57,9 +56,9 @@ module.exports = function(app) {
 					res.send(404)
 				}
 			});
-	});
+	}
 	
-	app.delete('/api/heart', function(req, res) {
+function del(req, res) {
 		var heart = req.body.heart;
 
 		Heart.update(
@@ -80,5 +79,13 @@ module.exports = function(app) {
 					res.send(404);
 				}
 			});
-		});
-}
+		}
+
+var route = '/api/heart';
+
+module.exports.bindings = [
+    { "method": "get", "route": route, "callback": get },
+    { "method": "post", "route": route, "callback": post },
+    { "method": "put", "route": route, "callback": put },
+    { "method": "del", "route": route, "callback": del }
+];

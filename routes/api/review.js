@@ -1,5 +1,4 @@
-module.exports = function(app) {
-	app.get('/api/review', function(req, res) {
+function get(req, res) {
 		
 		var review = req.query.review;
 
@@ -16,9 +15,9 @@ module.exports = function(app) {
 				res.send(404)
 			}
 		});
-	});
+	}
 	
-	app.post('/api/review', function(req, res) {
+function post(req, res) {
 		var review = req.body.review;
 		
 		var newReview = new Review(review);
@@ -34,9 +33,9 @@ module.exports = function(app) {
 			}
 		});
 
-	});
+	}
 	
-	app.put('/api/review', function(req, res) {
+function put(req, res) {
 		var review = req.body.review;
 
 		Review.update(
@@ -56,9 +55,9 @@ module.exports = function(app) {
 					res.send(404)
 				}
 			});
-	});
+	}
 	
-	app.delete('/api/review', function(req, res) {
+function del(req, res) {
 		var review = req.body.review;
 
 		Review.update(
@@ -79,5 +78,13 @@ module.exports = function(app) {
 					res.send(404);
 				}
 			});
-		});
-}
+		}
+
+var route = '/api/review';
+
+module.exports.bindings = [
+    { "method": "get", "route": route, "callback": get },
+    { "method": "post", "route": route, "callback": post },
+    { "method": "put", "route": route, "callback": put },
+    { "method": "del", "route": route, "callback": del }
+];
