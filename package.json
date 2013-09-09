@@ -8,12 +8,12 @@
     "clean-css": "~1.0.11",
     "connect": "~2.7.8",
     "consolidate": "~0.9.1",
+    "dynamodb-odm": "git://github.com/wrenoud/dynamodb-odm.git",
     "express": "~3.2.2",
     "jade": "~0.30.0",
     "mongoose": "~3.6.9",
     "node-mandrill": "~1.0.1",
     "nodemailer": "~0.4.1",
-    "redis": "~0.8.4",
     "request": "~2.22.0",
     "stripe": "git://github.com/wrenoud/node-stripe.git",
     "stylus": "~0.36.1",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "start": "node server.js"
   },
   "repository": {
