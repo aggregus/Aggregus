@@ -12,7 +12,7 @@ var CommunitySchema = new Schema({
         default: Date.now()
     },
     _date_created: Date,
-    name: String
+    name: String,
     ambassador: {
         type: Number,
         ref: 'User'

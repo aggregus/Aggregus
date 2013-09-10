@@ -20,3 +20,5 @@ secrets.js
 # Mac folder options
 */.DS_Store
 .DS_Store
+debug.js
+test_model.js

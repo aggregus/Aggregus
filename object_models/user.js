@@ -94,7 +94,7 @@ var UserEmailSchema = new Schema({
     preferences_email_notifications: Boolean,
     preferences_email_hearts: Boolean
 });
-var UserEmail = dynamodb.model("UserEmail",{hash: 'contact_email'}, UserEmailSchema);
+var UserEmail = dynamodb.model("UserEmail",{hash: 'email'}, UserEmailSchema);
 
 /**
  * User Finance Schema **server schema**
