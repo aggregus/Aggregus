@@ -1,36 +1,40 @@
-module.exports = function(mongoose) {
-	
-	var BookingSchema = new mongoose.Schema({
-	  _id: {type: String},
-	  _details: {
-		  date_created: {type: String},
-		  confirmed: {type: Boolean},
-		  charged: {type: Boolean},
-		  charge_token: {type: String}
-	  },
-	  booking_details: {
-		  date_booked: {
-			  date: {type: String},
-			  time: {type: String}
-		  },
-		  attendees: {type: String},
-		  total_price: {type: Number},
-		  host_profit: {type: Number}
-	  },
-	  creator: {
-		  type: String,
-		  ref: 'User'
-	  },
-	  recipient: {
-		  type: String,
-		  ref: 'User'
-	  },
-	  experience: {
-		  type: String,
-		  ref: 'User'
-	  }
-  	});	
-	
-	return BookingSchema
-	
-}
+/**
+ * Booking Schema
+ * 
+ * hash: _id
+ * range: none
+ * 
+ */
+var BookingSchema = new Schema({
+    _id: { //HashKey
+        type: Number,
+        required: true,
+        default: Date.now()
+    },
+    _date_created: Date,
+    _confirmed: Boolean,
+    _charged: Boolean,
+    _charge_token: String,
+    guest: {
+        type: Number,
+        ref: 'User'
+    },
+    host: {
+        type: Number,
+        ref: 'User'
+    },
+    booked_experience: {
+        type: Number,
+        ref: 'Experience'
+    },
+    booked_date: String,
+    booked_time: String,
+    booked_attendees: Number,
+    booked_profit_total: Number, // TODO description
+    booked_profit_guest: Number, // TODO description
+});
+
+var Booking  = dynamodb.model("Booking",{hash: '_id'}, BookingSchema);
+
+module.exports.Booking = Booking;
+module.exports.BookingSchema = BookingSchema;

@@ -12,7 +12,7 @@ var UserSchema = new Schema({
         default: Date.now()
     },
     _date_created: {
-        type:String,
+        type: Date,
         required: true,
     },
     _type: String,
@@ -53,7 +53,7 @@ var UserSchema = new Schema({
     social_googleplus_id: Number,
     social_googleplus_username: String
 });
-var User = dynamodb.model("Users",{hash: '_id'}, UserSchema);
+var User = dynamodb.model("User",{hash: '_id'}, UserSchema);
 
 
 /**
@@ -94,7 +94,7 @@ var UserEmailSchema = new Schema({
     preferences_email_notifications: Boolean,
     preferences_email_hearts: Boolean
 });
-var UserEmail = dynamodb.model("UserEmails",{hash: 'contact_email'}, UserEmailSchema);
+var UserEmail = dynamodb.model("UserEmail",{hash: 'contact_email'}, UserEmailSchema);
 
 /**
  * User Finance Schema **server schema**
@@ -136,7 +136,7 @@ var UserFinanceSchema = new Schema({
         select: false
     },
 });
-var UserFinance = dynamodb.model("UserFinances",{hash: 'community', range: 'user'}, UserFinanceSchema);
+var UserFinance = dynamodb.model("UserFinance",{hash: 'community', range: 'user'}, UserFinanceSchema);
 
 module.exports.User = User;
 module.exports.UserSchema = UserSchema;
