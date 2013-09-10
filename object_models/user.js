@@ -143,4 +143,4 @@ module.exports.UserSchema = UserSchema;
 module.exports.UserEmail = UserEmail;
 module.exports.UserEmailSchema = UserEmailSchema;
 module.exports.UserFinance = UserFinance;
-module.exports. UserFinanceSchema =  UserFinanceSchema;
+module.exports.UserFinanceSchema =  UserFinanceSchema;
