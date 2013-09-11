@@ -28,7 +28,7 @@ underscore = require('underscore');
 util = require('util');
 
 // financial transactions
-stripe = require('./manual_modules/stripe')(secrets.stripe_api_key);
+stripe = require('stripe')(secrets.stripe_api_key);
 
 
 /*******************************************************************************
