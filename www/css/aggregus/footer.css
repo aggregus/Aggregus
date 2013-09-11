@@ -1,0 +1,25 @@
+.bottom-menu-inverse {
+  background-color: #64ecff;
+  border-radius: 0px;
+  color: #fff;
+  margin-top: -54px;
+}
+.bottom-menu-inverse .container {
+  position: relative;
+  left: 20px;
+}
+.bottom-menu-inverse .brand {
+  margin: -7px 0 0 0px;
+  border: 0;
+  font-size: 27px;
+  font-family: wisdom_scriptregular;
+  color: #fff;
+}
+.bottom-menu-inverse a:hover {
+  color: #007d8e;
+  cursor: pointer;
+}
+.footer-buffer {
+  height: 200px;
+  width: 100%;
+}

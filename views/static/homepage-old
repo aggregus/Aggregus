@@ -1,0 +1,164 @@
+!!!
+html(lang="en")
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+		<!--[if lte IE 8]>
+		link(rel='stylesheet', type='text/css', href='../../css/ie8.css')
+		<![endif]-->
+
+		<!--[if gte IE 9]>
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<![endif]-->
+
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+	body.experience
+		div.navbar
+			div.navbar-inner
+				div.container
+					button.btn.btn-navbar.collapsed.hidden-tablet(type="button",style="color:white", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand.hidden-tablet(style="font-weight:300;color:white;")
+						span Aggregus
+					div.brand.hidden-phone.hidden-desktop(style="font-weight:300;font-size:50px;margin-top:-3px;color:white;")
+						span Aggregus
+					div#nav-collapse-01.nav-collapse.collapse.hidden-tablet
+						form.navbar-form.form-search.navbar-search.pull-right.hidden-tablet.hidden-phone
+							button.mrm.btn-negative.btn(style="border:0px;color:white;background-color:#64ecff;padding:7px 15px 8px 15px;font-size:15px;", type="button") Login
+							div.input-append
+								input.search-query.span3.typeahead(type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+						form.navbar-form.form-inline.form-search.navbar-search.pull-right.hidden-tablet.hidden-desktop
+							button.mrm.btn-negative.span3.btn(style="border:0px;color:#64ecff;background-color:white;padding:7px 15px 8px 15px;font-size:15px;", type="button") Learn More
+							button.mrm.btn-negative.span3.btn(style="border:0px;color:#64ecff;background-color:white;padding:7px 15px 8px 15px;font-size:15px;margin-bottom:10px;", type="button") Login
+							div.input-append
+								input.search-query.span3(type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+					form.form-search.form.navbar-search.pull-right.hidden-phone.hidden-desktop
+						form.form-inline	
+							button.mrl.btn-negative.btn.btn-negative(style="color:white;background-color:#64ecff;border:0px;padding:7px 15px 8px 15px;font-size:15px;margin-top:0px", type="button") Login
+							div.input-append
+								input.search-query.span4.typeahead(style="margin-top:0px", type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+		div.container.homepage
+			div.hero-unit.hero-unit-desktop.hidden-tablet.hidden-phone
+				h1.mbl Experience your community.
+				h3.mtl 
+					| Discover amazing experiences, hosted by local businesses and people in your community.
+					a(href="https://www.google.com", style="font-weight:300")  Learn more.
+				div(style="display:inline-block")
+					input.mtl.typeahead(style="height:40px;font-weight:100;width:400px;font-size:30px;line-height:50px;",data-provide="typeahead", type="text", placeholder="Find Your Community")
+					button.btn.mlm.btn-huge.btn-primary(style="position:relative;top:6px;height:60px") Let's go!
+				div
+					i.icon-lightbulb.float75.duration5.delay5(style="right:20%;bottom:100px;font-size:50px;color:#64ecff;")
+					i.icon-music.float100.duration3.delay5(style="right:55%;bottom:50px;font-size:55px;color:#64ecff;")
+					i.icon-star.float75.duration4(style="right:80%;bottom:75px;font-size:55px;color:#64ecff;")
+					i.icon-heart.float100.duration4(style="right:5%;bottom:150px;font-size:35px;color:#64ecff;")
+					i.icon-rocket.rocket.duration3.delay5(style="left:60%;bottom:200px;font-size:35px;color:#64ecff;")
+					i.icon-heart.float100.duration3.delay2(style="left:5%;bottom:0px;font-size:35px;color:#64ecff;")
+					i.icon-comment.float75.duration5.delay5(style="left:15%;bottom:100px;font-size:30px;color:#64ecff;")
+					i.icon-glass.float100.duration3.delay5(style="left:55%;bottom:100px;font-size:35px;color:#64ecff;")
+					i.icon-glass.float75.duration4(style="left:80%;bottom:150px;font-size:35px;color:#64ecff;")
+					i.icon-film.float100.duration4(style="left:5%;bottom:70px;font-size:35px;color:#64ecff;")
+			div.hero-unit.hero-unit-phone.hidden-tablet.hidden-desktop
+				h4(style="margin-top:-10px") Experience your community.
+				h5.mbs 
+					| Discover amazing experiences, hosted by local businesses and people in your community.
+					a(href="https://www.google.com")  Learn more.
+				div.mtn(style="display:inline-block")
+					input.typeahead(style="width:63%;", type="text",data-provide="typeahead", placeholder="Find Your Community")
+					button.btn.mls.btn-primary(style="") Let's go!
+				div
+					i.icon-smile.float25.duration5.delay1(style="right:65%;bottom:50px;font-size:35px;color:#64ecff")
+					i.icon-gift.float100(style="right:25%;bottom:-20px;font-size:35px;color:#64ecff;")
+					i.icon-music.float50.duration2(style="right:50%;bottom:25px;font-size:35px;color:#64ecff;")
+					i.icon-globe.float100(style="right:60%;bottom:0px;font-size:35px;color:#64ecff;")
+					i.icon-heart.float100(style="right:15%;bottom:-60px;font-size:35px;color:#64ecff;")
+					a(href="https://www.google.com", target="_blank")
+						img.img-circle.float100.duration5.delay3(style="border-radius:12.5px;bottom:0px;right:5%",height="25",width="25",src="https://d2qjfe4gq0m6av.cloudfront.net/users/RyanMiller16899724/profileimgs/1374381328674.jpg")
+			hr
+			div.lead 
+				| Experiences Near
+				a(href="www.google.com")  Bellingham, WA
+			div.span4(style="border-radius: 6px;position:relative;margin:0 12px 20px 0;height:250px;background-image:url('https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/700/Soho.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+					div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+						div.lead(style="line-height:22px;margin:0;font-size:20px;") Discover the Gangs and Mobs of Old NYC on a Guided Walk
+						div.lead(style="line-height:17px;margin:1px 0 0 0;font-size:17px;")
+							| by 
+							a.fw500(style="color:#64ecff; font-weight:500") Robin London
+					div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $10
+			div.span4(style="border-radius: 6px;position:relative;margin:0 12px 20px 0;height:250px;background-image:url('https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/794/st_madg.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+					div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+						div.lead(style="line-height:22px;margin:0;font-size:20px;") Bring Your Child to a Creative Outdoor Sketching Session
+						div.lead(style="line-height:17px;margin:1px 0 0 0;font-size:17px;")
+							| by 
+							a.fw500(style="color:#64ecff; font-weight:500") Valeen Bhat
+					div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $10
+			div.span4(style="border-radius: 6px;position:relative;margin:0 0px 20px 0;height:250px;background-image:url('https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/25/extra_large_bankerturnedmonk.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+					div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+						div.lead(style="line-height:22px;margin:0;font-size:20px;") Travel Back to Relive Greenwich Village’s Beatnik Renaissance
+						div.lead(style="line-height:17px;margin:1px 0 0 0;font-size:17px;")
+							| by 
+							a.fw500(style="color:#64ecff; font-weight:500") Sandra Schulman
+					div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $10
+			div.span12.text-center
+				button.btn.btn-primary View more Bellingham experiences
+			hr.span12.mhn
+			div.mbs.desc.hidden-phone.hidden-tablet(style="font-size:35px;width:100%;")
+				span(style="color:#64ecff;font-weight:300") Aggregus
+				span  is a community marketplace for unique experiences.
+			div.mbs.desc.hidden-desktop(style="font-size:27px;width:100%;")
+				span(style="color:#64ecff;font-weight:300;") Aggregus 
+				span is a community marketplace for unique experiences.
+			div.desc.hidden-phone.hidden-tablet(style="margin-bottom:40px;font-size:25px;width:100%;")
+				span(style="font-weight:100") Learn more about Aggregus Experiences, Hosts, and Communities.
+			div.desc.hidden-desktop.text-center(style="font-size:22px;width:100%;")
+				span(style="font-weight:100") Learn more about Aggregus Experiences, Hosts, and Communities.
+			div.row	
+				div.span4.conceptBox.text-center
+					h4.hidden-desktop.hidden-phone.fw500.text-center.mbl.mtm Experiences
+					h3.hidden-tablet.text-center.fw300.mbl.mtm Experiences
+					img.img-circle(style="height:150px;width:150px;", src="https://a1.muscache.com/locations/uploads/photo/image/27529/0_3400_0_2848_one_Bondi_Air_B_and_B_25.jpg")
+					div.fw300.mal(style="font-size:22px;line-height:22px") Opportunities, to try something new, learn a skill, or just have fun.
+					button.btn.btn-primary.text-center Learn About Experiences
+				div.span4.conceptBox.text-center
+					h4.hidden-desktop.fw500.hidden-phone.text-center.mbl.mtm Hosting
+					h3.hidden-tablet.text-center.fw300.mbl.mtm Hosting
+					img.img-circle(style="height:150px;width:150px;", src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/18136460/coverimgs/1374692288501.jpg")
+					div.fw300.mal(style="font-size:22px;line-height:22px") Share your passion with your community like never before.
+					button.btn.text-center.btn-primary Learn About Hosting
+				div.span4.conceptBox.text-center
+					h4.hidden-desktop.hidden-phone.fw500.text-center.mbl.mtm Communities
+					h3.hidden-tablet.text-center.fw300.mbl.mtm Communities
+					img.img-circle(style="height:150px;width:150px;", src="https://a3.muscache.com/locations/uploads/photo/image/27559/0_4200_0_2800_one_Bondi_Air_B_and_B_29.jpg")
+					div.fw300.mal(style="font-size:22px;line-height:22px") Connect with amazing individuals and local businesses near you.
+					button.btn.text-center.btn-primary Learn About Communities
+			div.desc(style="margin-bottom:0px;font-size:25px;width:100%;")
+				span(style="font-weight:100") 
+					| Are you a local business? Learn about 
+					a(href="www.google.com") Aggregus for Local Business.
+		div.mtl.bottom-menu(style="background-color:#64ecff;color:white")
+			div.container
+				div.row
+					div.span2.brand
+						| Aggregus
+					div.span8
+						ul.bottom-links
+							li
+								a Stuff
+							li
+								a and Things
+					div.span2
+						ul.bottom-icons
+							li
+								a.fui-facebook.
+							li
+								a.fui-twitter
+							li
+								a.fui-pinterest

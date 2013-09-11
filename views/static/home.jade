@@ -10,16 +10,67 @@ html(lang="en")
 		<!--[if gte IE 9]>
 		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
 		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		script(src='../../lib/bootstrap.min.js')
 		<![endif]-->
 
 		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
 		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
 
 	body.homepage
-		div.header
-			div.logo
-				a(href='#')
-					span A
-			div.menu-item
-				i.icon-cog
-		div.hero-image
+		div.navbar
+			div.navbar-inner
+				div.container
+					div.brand.pull-left Aggregus
+					button.btn.btn-navbar(type="button", data-toggle="collapse", data-target="#nav-collapse-01")
+					div#nav-collapse-01.nav-collapse.collapse
+						form.navbar-search.form-search
+							div.input-append
+								input.search-query.span2(type="text", placeholder="Search")
+								button.btn(type="submit")
+									i.icon-heart(style="margin:3px 0 0 0")
+						ul.nav.pull-right
+							li
+								a(href="#") Login
+							li
+								a(href="#") Signup
+		div.hero-unit
+			h1 This is my first hero unit.
+			p Together, we shall do great things.
+			button.btn.btn-huge(type="button") Fuck yeah!
+		div.control-group
+			div.input-prepend.input-datepicker
+				button.btn
+					span.fui-calendar
+				input#datepicker-01.span6(type="text")
+		ul.breadcrumb
+			li
+				a(href="#") link
+		i.dropdown-arrow
+		ul.dropdown-menu
+			li
+				a(href="#") Hi!
+		div.dialog.dialog-success
+			div.container Have you ever seen a dialog?
+					button.btn.btn-primary.mll(type="button") Yes, yes I have!
+		div.modal
+			div.modal-header 
+				button.close.fui-cross(type="button", onclick="$($(this)[0].parentElement.parentElement).hide()", data-dismiss="modal", aria-hidden="true")
+				h3 A fuckin' awesome modal.
+			div.modal-body
+				p Yeah, let's do this. Let's make something beautiful.
+			div.modal-footer
+				button.btn.btn-warning(type="button") Check yourself.
+		div.alert.alert-error
+			button.close.fui-cross(type="button", data-dismiss="alert")
+			h3 This is an alert.
+			p Something awful has happened.
+			button.btn.btn-primary(type="button") Yes, I know...
+		div.bottom-menu
+			div.container
+			div.brand.fui-flat
+			div.span2.pull-right
+				ul.bottom-icons
+					li
+						a.fui-facebook
+					li
+						a.fui-pinterest

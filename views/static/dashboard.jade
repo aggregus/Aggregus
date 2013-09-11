@@ -1,0 +1,185 @@
+!!!
+html(lang="en")
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+		<!--[if lte IE 8]>
+		link(rel='stylesheet', type='text/css', href='../../css/ie8.css')
+		<![endif]-->
+
+		<!--[if gte IE 9]>
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<![endif]-->
+
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+	body.experience
+		div.navbar(style="margin-left:-20px;padding-left:20px;margin-right:-20px;padding-right:20px")
+			div.navbar-inner
+				div.container
+					button.btn.btn-navbar.collapsed(type="button", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand(style="position:relative;height:36px;width:36px;padding:20px;background-color:#93f2ff")
+						span(Style="top:-20px;left:-2px; position:relative;font-size:60px;font-weight:500;color:white") A
+					div#nav-collapse-01.nav-collapse.in.collapse
+						ul.nav.pull-right
+							li
+								a Learn More
+							li
+								a Login
+							form.navbar-search.form-search.pull-right
+								div.input-append
+									input.search-query.span3(type="text", placeholder="Search Communities")
+									button.btn.btn-large(type="submit", style="padding-bottom:7.5px")
+										i.fui-search
+		div.container.body
+			div.row
+				div.span4
+					div.mtn.lead(style="font-size:50px;margin:-15px 0 0 0") Ryan Miller
+					img.img-circle(height="75", width="75", src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/RyanMiller16899724/profileimgs/1374531530346.jpg")
+					br
+					p
+					ul.nav.nav-list.nav-list-vivid(style="background-color:white;border-right:1px solid #666;border-radius:0px")
+						li(style="font-size:50px;padding:0;margin:0;")
+							a.mln(style="border-radius: 6px 0 0 6px;text-align:right;font-size:25px;padding:10px 10px 4px 0;height:30px;font-weight:300") Notifications
+						li.active(style="font-size:50px;padding:0;margin:0;")
+							a.mln(style="border-radius: 6px 0 0 6px;text-align:right;font-size:25px;padding:10px 10px 4px 0;height:30px;font-weight:300") Messages
+						li(style="font-size:50px;padding:0;margin:0;")
+							a.mln(style="border-radius: 6px 0 0 6px;text-align:right;font-size:25px;padding:10px 10px 4px 0;height:30px;font-weight:300") My Bookings
+						li(style="font-size:50px;padding:0;margin:0;")
+							a.mln(style="border-radius: 6px 0 0 6px;text-align:right;font-size:25px;padding:10px 10px 4px 0;height:30px;font-weight:300") My Experiences
+						li(style="font-size:50px;padding:0;margin:0;")
+							a.mln(style="border-radius: 6px 0 0 6px;text-align:right;font-size:25px;padding:10px 10px 4px 0;height:30px;font-weight:300") Edit Profile
+						li(style="font-size:50px;padding:0;margin:0;")
+							a.mln(style="border-radius: 6px 0 0 6px;text-align:right;font-size:25px;padding:10px 10px 4px 0;height:30px;font-weight:300") Settings
+				div.span8.hide
+					div.form-inline
+						label 
+							div.lead.mbn Account Email
+						br
+						div.control-group.mbn
+							input.mrm(type="text", value="ryan@aggregus.com")
+						br
+						button.mtn.mbn.btn.btn-primary Update
+					div.form-inline.mtm
+						label 
+							div.lead.mbn Update Password
+						br
+						div.control-group.mtn.mbn
+							div.input-prepend
+								span.add-on
+									i.icon-lock(style="margin:5px 6px 0 0")
+								input.mrm(type="password", placeholder="Current Password")
+						br
+						div.control-group.mtn.mbn
+							div.input-prepend
+								span.add-on
+									i.icon-lock(style="margin:5px 6px 0 0")
+								input.mrm(type="password", placeholder="New Password")
+						br
+						button.mtn.btn.btn-primary Update
+					div.lead.mtm.mbn Email Preferences
+					label Notifcation Alerts
+					input.agg-switch(type="checkbox", data-toggle="switch")
+					label Community Alerts
+					input.agg-switch(type="checkbox", data-toggle="switch")
+					label Heart Alerts
+					input.agg-switch(type="checkbox", data-toggle="switch")
+					div.form-inline.mtn
+						label.mbn
+							div.lead.mbn.mtn Deposit Information
+							small(style="position:relative;top:-5px") 
+								| Learn about our payment handling system
+								a  here.
+						div.control-group.mtn.mbn
+							div.input-prepend
+								span.add-on
+									i.icon-lock(style="margin:5px 6px 0 0")
+								input.mrm(type="text", placeholder="Legal Name on Account")
+						br
+						div.control-group.mtn.mbn
+							div.input-prepend
+								span.add-on
+									i.icon-lock(style="margin:5px 6px 0 0")
+								input.mrm(type="text", placeholder="Routing Number")
+						br
+						div.control-group.mtn.mbn
+							div.input-prepend
+								span.add-on
+									i.icon-lock(style="margin:5px 6px 0 0")
+								input.mrm(type="text", placeholder="Account Number")
+						br
+						div.control-group.mtn.mbn
+							div.input-prepend
+								span.add-on
+									i.icon-lock(style="margin:5px 6px 0 0")
+								input.mrm(type="text", placeholder="Social Security Number")
+						br
+						select.select.mln(data-icon="none", data-style="", data-width="width:250px")
+							option(selected) Select Bank Account Type
+							option Individual
+							option Corporation
+						br
+						button.btn.mtn.btn-primary.mbl Update
+				div.span8
+					div.span4(style="border-radius: 6px;position:relative;margin:0 11px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/18136460/coverimgs/1374692288501.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:22px;margin:0;font-size:20px;") Guatemalan Coffee Flight
+						select.select-large.mln(data-icon="none", data-style="", data-width="width:145px;position:absolute;bottom:-5px;left:5px;")
+							option(selected) Manage
+							option.fuck Edit Details
+							option Edit Availability
+							option View Bookings
+							option Promote
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $10
+					div.span4(style="border-radius: 6px;position:relative;margin:0 0px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/18136460/coverimgs/1374692288501.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:22px;margin:0;font-size:20px;") Guatemalan Coffee Flight
+						select.select-large.mln(data-icon="none", data-style="", data-width="width:145px;position:absolute;bottom:-5px;left:5px;")
+							option(selected) Manage
+							option.fuck Edit Details
+							option Edit Availability
+							option View Bookings
+							option Promote
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $65
+					div.span4(style="border-radius: 6px;position:relative;margin:0 11px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/18136460/coverimgs/1374692288501.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:22px;margin:0;font-size:20px;") Guatemalan Coffee Flight
+						select.select-large.mln(data-icon="none", data-style="", data-width="width:145px;position:absolute;bottom:-5px;left:5px;")
+							option(selected) Manage
+							option.fuck Edit Details
+							option Edit Availability
+							option View Bookings
+							option Promote
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $10
+					div.span4(style="border-radius: 6px;position:relative;margin:0 0px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/18136460/coverimgs/1374692288501.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:22px;margin:0;font-size:20px;") Guatemalan Coffee Flight
+						select.select-large.mln(data-icon="none", data-style="", data-width="width:145px;position:absolute;bottom:-5px;left:5px;")
+							option(selected) Manage
+							option.fuck Edit Details
+							option Edit Availability
+							option View Bookings
+							option Promote
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $65
+		div.bottom-menu.navbar-fixed-bottom(style="background-color:#64ecff;color:white")
+			div.container
+				div.row
+					div.span2.brand
+						| Aggregus
+					div.span8
+						ul.bottom-links
+							li
+								a Stuff
+							li
+								a and Things
+					div.span2
+						ul.bottom-icons
+							li
+								a.fui-facebook.
+							li
+								a.fui-twitter
+							li
+								a.fui-pinterest

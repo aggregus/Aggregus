@@ -117,17 +117,24 @@ String.prototype.repeat = function(num) {
       _buttonHtml: function() { // Remove arrows on the buttons
         return "" +
         "<a class='ui-spinner-button ui-spinner-up ui-corner-tr'>" +
-          "<span class='ui-icon " + this.options.icons.up + "'></span>" +
         "</a>" +
         "<a class='ui-spinner-button ui-spinner-down ui-corner-br'>" +
-          "<span class='ui-icon " + this.options.icons.down + "'></span>" +
         "</a>";
       }
     });
 
     $('#spinner-01').customspinner({
-      min: -99,
-      max: 99
+      min: 0,
+      max: 5
+    }).on('focus', function () {
+      $(this).closest('.ui-spinner').addClass('focus');
+    }).on('blur', function () {
+      $(this).closest('.ui-spinner').removeClass('focus');
+    });
+
+    $('#spinner-02').customspinner({
+      min: 0,
+      max: 5
     }).on('focus', function () {
       $(this).closest('.ui-spinner').addClass('focus');
     }).on('blur', function () {
@@ -161,7 +168,7 @@ String.prototype.repeat = function(num) {
     });
 
     // jQuery UI Datepicker
-    var datepickerSelector = '#datepicker-01';
+    var datepickerSelector = '#datepicker-02';
     $(datepickerSelector).datepicker({
       showOtherMonths: true,
       selectOtherMonths: true,

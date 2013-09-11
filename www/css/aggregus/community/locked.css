@@ -1,0 +1,112 @@
+.community.locked {
+  background-size: cover;
+  background-position: center center;
+}
+.community.locked .overcast {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  z-index: -1;
+}
+.community.locked .hero-unit {
+  background-color: transparent;
+}
+.community.locked .hero-unit.desktop {
+  height: 350px;
+  padding: 60px 0 60px 0;
+  margin-top: 100px;
+}
+.community.locked .hero-unit.desktop h1 {
+  margin: -10px 0 0 0;
+  padding: 50px;
+  font-size: 100px;
+  background-size: 100% 200px;
+  background-position: center 0px;
+  overflow: visible;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+.community.locked .hero-unit.desktop h6 {
+  font-size: 100px;
+  background-size: 100% 150px;
+  background-position: center -5px;
+  margin-top: -75px;
+}
+.community.locked .hero-unit.desktop button {
+  font-family: mission_scriptregular;
+  font-size: 50px;
+  margin-top: 20px;
+  padding: 30px 30px 26px 30px;
+}
+.community.locked .hero-unit.desktop p {
+  background-image: url("http://s8.postimg.org/3oa6hqp1x/blackout_sprite.png");
+  background-size: 50% 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+  color: #fff;
+}
+.community.locked .hero-unit.tablet {
+  height: 325px;
+  padding: 60px 0 60px 0;
+}
+.community.locked .hero-unit.tablet h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 90px;
+  background-size: 100% 120px;
+  overflow: visible;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+.community.locked .hero-unit.tablet h6 {
+  font-size: 60px;
+  background-size: 50% 50px;
+}
+.community.locked .hero-unit.tablet button {
+  font-family: mission_scriptregular;
+  font-size: 50px;
+  margin-top: 20px;
+  padding: 30px 30px 26px 30px;
+}
+.community.locked .hero-unit.tablet p {
+  background-image: url("http://s8.postimg.org/3oa6hqp1x/blackout_sprite.png");
+  background-size: 50% 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 20px;
+  color: #fff;
+}
+.community.locked .hero-unit.phone {
+  height: 265px;
+  padding: 30px 30px 60px 30px;
+}
+.community.locked .hero-unit.phone h1 {
+  font-size: 65px;
+  background-size: 100% 120px;
+  line-height: 60px;
+}
+.community.locked .hero-unit.phone h6 {
+  font-size: 30px;
+  background-size: 100% 40px;
+}
+.community.locked .hero-unit.phone button {
+  font-family: mission_scriptregular;
+  font-size: 30px;
+  margin-top: 15px;
+  padding: 20px 20px 16px 20px;
+}
+.community.locked .hero-unit h1,
+.community.locked .hero-unit h6 {
+  margin: 0;
+  height: 150px;
+  background-image: url("http://s8.postimg.org/3oa6hqp1x/blackout_sprite.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: mission_scriptregular;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: -1px -1px 0 #dedede, 1px -1px 0 #dedede, -1px 1px 0 #dedede, 1px 1px 0 #dedede, 2px 2px 5px #999;
+}

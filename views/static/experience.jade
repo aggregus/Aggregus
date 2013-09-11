@@ -1,28 +1,258 @@
 !!!
-html(lang="en")
+html(lang="en", prefix="og: http://ogp.me/ns#")
 	head
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 
-		<!--[if lte IE 8]>
-		link(rel='stylesheet', type='text/css', href='../../css/ie8.css')
-		<![endif]-->
+		title Aggregus
 
-		<!--[if gte IE 9]>
-		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
-		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
-		<![endif]-->
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1")
+		meta(charset="utf-8")
 
-		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
-		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
-		<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+		meta(name="description", content="A community marketplace for unique experiences.")
+		meta(name="keywords", content="Aggregus, experiences, community, adventures, community ambassador, community ambassadors, hosting")
+		meta(name="author", content="Aggregus LLC")
+
+		meta(property="og:title", content="Aggregus")
+		meta(property="og:description", content="A community marketplace for unique experiences.")
+		meta(property="og:determiner", content="")
+		meta(property="og:type", content="website")
+		meta(property="og:url", content="https://www.aggregus.com")
+		meta(property="og:image:url", content="http://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+		meta(property="og:image:url_secure", content="https://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+		meta(property="og:image:type", content="image/png")
+		meta(property="og:image:height", content="1000")
+		meta(property="og:image:width", content="1000")
+
+		meta(name="twitter:card", content="summary")
+		meta(name="twitter:site", content="@aggregus")
+		meta(name="twitter:creator", content="@aggregus")
+		meta(name="twitter:title", content="Aggregus")
+		meta(name="twitter:description", content="A community marketplace for unique experiences.")
+		meta(name="twitter:image", content="https://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+
+		link(rel="stylesheet", type="text/css", href="../../css/aggregus.css")
+
+		script(type="text/javascript", data-main='../../main.js', src='../../lib/require.js')
+		script(type="text/javascript", src='http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js')
 
 	body.experience
-		div.kill-overflow
-			div.header
-				div.logo
-					span A
-			div.side-bar
-			div.main
+		div.navbar.navbar-inverse#top
+			div.navbar-inner
+				div.hidden-desktop.hidden-tablet.mobile-navbar-fill-left
+				div.hidden-desktop.hidden-tablet.mobile-navbar-fill-right
+				div.container
+					button.btn.btn-navbar.collapsed.hidden-tablet(type="button", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand Aggregus
+					div#nav-collapse-01.nav-collapse.in.collapse
+						form.hidden-desktop.hidden-tablet.navbar-form.form-search.navbar-search.span3
+							div.input-append
+								input.search-query.span3(type="text", placeholder="Email")
+								button.btn(type="button") 
+									i.icon-user
+							div.input-append
+								input.search-query.span3(type="password", placeholder="Password")
+								button.btn(type="button") 
+									i.icon-key
+							button.btn.mobile-button.span3.mbn(type="button") Login
+							p.mtm.mbn.text-center
+								| Don't have an account?
+								strong  
+									a Register here.
+							hr.mtm
+							div.input-append
+								input.search-query.span3(type="text", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+							p
+						form.hidden-tablet.hidden-phone.navbar-form.form-search.navbar-search.pull-right
+							button.btn.mrm.login-button Login
+							button.btn.mrm.login-button Join
+							div.input-append
+								input.search-query.typeahead(type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+					form.hidden-desktop.hidden-phone.navbar-form.form-inline.form-search.navbar-search.navbar-search-tablet.span3.pull-right
+						button.btn.mrm.login-button Login
+						div.input-append
+							input.search-query.span3(type="text", placeholder="Find Your Community")
+							button.btn(type="submit") 
+								span.fui-search
+		div.container
+			div.row
+				div.span9
+					div.hero-unit(style="background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/18090903/coverimgs/1376502804938.jpg')")
+						div.box.img-polaroid.phone.hidden-tablet.hidden-desktop
+							div.img(style="background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/18090903/profileimgs/1376502804938.jpg')")
+						div.box.img-polaroid.desktop.hidden-phone
+							div.img(style="background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/18090903/profileimgs/1376502804938.jpg')")
+					div.row
+						div.span9.page-header.pull-right.header
+							h3.title(style="font-weight:500") An Evening of Music with Sarah Goodin
+							h6.author by 
+								a(style="font-weight:300") Sarah Goodin
+						div.span9.pull-right(style="margin:10px 0 -20px 0 ")
+							div.row.details
+								div.span3.text-center
+									h4
+										sup 
+											i.icon-usd(style="margin: 0 10px 10px 0")
+										| 30 Per Guest
+								p.mal.hidden-desktop.hidden-tablet
+								div.span3.text-center 
+									h4
+										sup 
+											i.icon-user(style="margin: -3px 20px 10px 0")
+										| 2 - 12 Guests
+								p.mal.hidden-desktop.hidden-tablet
+								div.span3.text-center 
+									h4
+										sup 
+											i.icon-time(style="margin: 0 20px 10px 0")
+										| 2 Hours
+							hr
+						div.span9.pull-right(style="margin-top:10px;")
+							a(href="#booker")
+								button.btn.btn-block.btn-primary.btn-huge.hidden-desktop.hidden-tablet(style="margin-top:15px") Book it!
+							div.lead Description
+							p.span9.mtn.pull-right				
+								| Join me, Sarah Goodin, in an intimate evening of music and assorted good things. Includes Q&A and a free signed copy of Sarah's latest release. Up to two song requests available per evening!
+							div.lead
+								| About 
+								a(href="#") Sarah Goodin
+							ul.media-list
+								li.media
+									a.pull-left(href="#")
+										img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/16432720/profileimgs/1375904794676.jpg")
+									div.media-body
+										p Sarah sings songs and they are good. She plays songs for people who listen. They are nice songs. Sarah sings songs and they are good. She plays songs for people who listen. They are nice songs. Sarah sings songs and they are good. She plays songs for people who listen. They are nice songs.
+										button.btn.btn-primary.mrm Learn More About Sarah
+										p.hidden-desktop.hidden-tablet
+										button.btn.btn-primary Send Sarah a Message
+							div.lead Location
+							div#map.img-polaroid
+							div.lead Reviews
+							ul.media-list
+								li.media
+									a.pull-left(href="#")
+										img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/18090903/profileimgs/1376502804938.jpg")
+									div.media-body
+										h6.media-heading Sarah was absolutely amazing!
+										p Sarah was wonderful. She sang us songs and we had a great time. Her CD is on auto-play in my apartment non-stop.
+								li.media
+									a.pull-left(href="#")
+										img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/RyanMiller16899724/profileimgs/1374531530346.jpg")
+									div.media-body
+										h6.media-heading Well howdy-do!
+										p Now that's what I call a voice! Nice job Sarah, we had a great time!
+							div.lead.pull Photos
+							div#photos.carousel.slide
+								ol.carousel-indicators
+									li.active(data-target="photos", data-slide-to="0")
+									li(data-target="photos", data-slide-to="1")
+								div.carousel-inner
+									div.active.item
+										img(src="http://s9.postimg.org/ky8vuxpsv/Thing.jpg")
+									div.item
+										img(src="http://sailbeach.com/user/cimage/Beach-House.jpg")
+								a.carousel-control.fui-arrow-left.left(href="#photos", data-slide="prev")
+								a.carousel-control.fui-arrow-right.right(href="#photos", data-slide="next")
+							p
+							div.lead.pull Video
+							div.span9.flex-video.widescreen.mbl
+								iframe(src="//www.youtube.com/embed/tv6lzSuTHhs", frameborder="", allowfullscreen)
+				div.span3.pull-right.booker#booker
+					div.lead.text-center.man.hidden-tablet(style="height:90px;font-size:65px;font-family:wisdom_scriptregular") Book it!
+					div.lead.text-center.man.hidden-desktop.hidden-phone(style="height:60px;font-size:45px;font-family:wisdom_scriptregular") Book it!
+					div.control-group
+						input.span3(type="text", placeholder="Your Name?")
+						i.input-icon.icon-user
+					div.control-group
+						input#datepicker-01.span3(type="text", placeholder="Choose A Date", style="background-color:#fff; border-color: #bdc3c7; color:#666", readonly)
+						i.input-icon.icon-calendar(style="margin-right:1px")
+					select.select.span3(data-icon="icon-time", data-width="width:100%", data-style="", style="position:relative;width:100%")
+						option(selected) What Time?
+						option 5 PM
+						option 6 PM
+						option 7 PM
+						option 8 PM
+					select.select.span3(data-icon="icon-group",data-width="width:100%", data-style="margin-left:-20px;margin-top:0px", style="position:relative;width:100%")
+						option(selected) Group size?
+						option 1
+						option 2
+						option 3
+					button.btn.btn-huge.btn-primary.btn-block Book Now
+					hr		
+				div.span3.pull-right.community
+					div.lead Sarah's Community
+					div.image(style="background-image:url('http://media-cdn.tripadvisor.com/media/photo-s/00/1a/a8/21/bellingham-bay.jpg')")
+						div.footer 
+							div.title Bellingham
+							div.desc Land of abundant trees and heady ganja.
+					button.btn.btn-block.btn-primary.mtm View Community
+					hr
+					div.lead.mtn Share
+					button.btn.btn-block.btn-social-facebook(style="margin:5px")
+						span.fui-facebook
+					button.btn.btn-block.btn-social-twitter(style="margin:5px")
+						span.fui-twitter
+					button.btn.btn-block.btn-social-pinterest(style="margin:5px")
+						span.fui-pinterest
+					button.btn.btn-block.btn-social-googleplus(style="margin:5px")
+						span.fui-googleplus
+					hr	
+					div.lead Share By Email
+					div.control-group
+						input.span3(type="text", placeholder="Your Name")
+						i.input-icon.icon-user
+					div.control-group
+						input.span3(type="text", placeholder="Recipient Email")
+						i.input-icon.icon-envelope-alt(style="margin-right:2px")
+					button.btn.btn-block.btn-primary Share
+					hr
+					div.lead Follow Sarah
+					div.control-group
+						input.span3(type="text", placeholder="Your Email")
+						i.input-icon.icon-envelope-alt(style="margin-right:2px")
+					button.btn.btn-block.btn-primary Subscribe
+		p.footer-buffer
+		div.bottom-menu.bottom-menu-inverse
+			div.container
+				div.row
+					div.brand.span2 Aggregus
+					div.span8
+						ul.bottom-links
+							li
+								a Learn More
+							li
+								a Careers
+							li
+								a Privacy
+							li
+								a Terms
+
+					div.span2
+						ul.bottom-icons
+							li
+								a.fui-facebook
+							li
+								a.fui-twitter
+							li
+								a.fui-pinterest
 		script.
-			//var map = L.map('main').setView([51.505, -0.09], 12);
-			//L.tileLayer('http://a.tiles.mapbox.com/v3/aggregus.map-keakb9ot/{z}/{x}/{y}.png').addTo(map)
+			map = L.map('map', {touchZoom:false, scrollWheelZoom: false}).setView([48.7502, -122.4750], 15);
+			L.tileLayer('https://a.tiles.mapbox.com/v3/aggregus.map-keakb9ot/{z}/{x}/{y}.png', {maxZoom: 20}).addTo(map);
+			var marker = L.marker([48.7502, -122.4750]).addTo(map);
+			marker.bindPopup('Bellingham, WA').openPopup();
+
+
+
+
+
+
+
+
+
+
+
+
+
+

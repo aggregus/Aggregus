@@ -1,0 +1,220 @@
+!!!
+html(lang="en", prefix="og: http://ogp.me/ns#")
+	head
+
+		title Aggregus
+
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(charset="utf-8")
+
+		meta(name="description", content="A community marketplace for unique experiences.")
+		meta(name="keywords", content="Aggregus, experiences, community, adventures, community ambassador, community ambassadors, hosting")
+		meta(name="author", content="Aggregus LLC")
+
+		meta(property="og:title", content="Aggregus")
+		meta(property="og:description", content="A community marketplace for unique experiences.")
+		meta(property="og:determiner", content="")
+		meta(property="og:type", content="website")
+		meta(property="og:url", content="https://www.aggregus.com")
+		meta(property="og:image:url", content="http://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+		meta(property="og:image:url_secure", content="https://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+		meta(property="og:image:type", content="image/png")
+		meta(property="og:image:height", content="1000")
+		meta(property="og:image:width", content="1000")
+
+		meta(name="twitter:card", content="summary")
+		meta(name="twitter:site", content="@aggregus")
+		meta(name="twitter:creator", content="@aggregus")
+		meta(name="twitter:title", content="Aggregus")
+		meta(name="twitter:description", content="A community marketplace for unique experiences.")
+		meta(name="twitter:image", content="https://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+
+		link(rel="stylesheet", type="text/css", href="../../css/aggregus.css")
+
+		script(type="text/javascript", data-main='../../main.js', src='../../lib/require.js')
+
+	body.homepage
+		div.navbar.navbar-inverse
+			div.navbar-inner
+				div.hidden-desktop.hidden-tablet.mobile-navbar-fill-left
+				div.hidden-desktop.hidden-tablet.mobile-navbar-fill-right
+				div.container
+					button.btn.btn-navbar.collapsed.hidden-tablet(type="button", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand Aggregus
+					div#nav-collapse-01.nav-collapse.in.collapse
+						form.hidden-desktop.hidden-tablet.navbar-form.form-search.navbar-search.span3
+							div.input-append
+								input.search-query.span3(type="text", placeholder="Email")
+								button.btn(type="button") 
+									i.icon-user
+							div.input-append
+								input.search-query.span3(type="password", placeholder="Password")
+								button.btn(type="button") 
+									i.icon-key
+							button.btn.mobile-button.span3.mbn(type="button") Login
+							p.mtm.mbn.text-center
+								| Don't have an account?
+								strong  
+									a Register here.
+							hr.mtm
+							div.input-append
+								input.search-query.span3(type="text", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+							p
+						form.hidden-tablet.hidden-phone.navbar-form.form-search.navbar-search.pull-right
+							button.btn.mrm.login-button Login
+							button.btn.mrm.login-button Join
+							div.input-append
+								input.search-query.typeahead(type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+					form.hidden-desktop.hidden-phone.navbar-form.form-inline.form-search.navbar-search.navbar-search-tablet.span3.pull-right
+						button.btn.mrm.login-button Login
+						div.input-append
+							input.search-query.span3(type="text", placeholder="Find Your Community")
+							button.btn(type="submit") 
+								span.fui-search
+		div.hidden-tablet.hidden-phone.hero-unit.desktop.text-center(style="background-image:url('http://farm1.staticflickr.com/223/500014042_1f4d1e4baf_o.jpg')")
+			div.overcast
+			div.container
+				h1 Experience Bellingham
+				h6 (Like never before.)
+				button.btn.btn-primary Let's Go!
+				p Don't live in Bellingham?
+					a  Click here.
+		div.hidden-desktop.hidden-phone.hero-unit.tablet.text-center(style="background-image:url('http://farm1.staticflickr.com/223/500014042_1f4d1e4baf_o.jpg')")
+			div.overcast
+			div.container
+				h1 Experience Bellingham
+				h6 (Like never before.)
+				button.btn.btn-primary Let's Go!
+				p Don't live in Bellingham?
+					a  Click here.
+		div.hidden-desktop.hidden-tablet.hero-unit.phone.text-center(style="background-image:url('http://farm1.staticflickr.com/223/500014042_1f4d1e4baf_o.jpg')")
+			div.overcast.phone
+			div.container
+				h1 Experience Your Community
+				h6 (Like never before.)
+				button.btn.btn-primary Find yours!
+		div.container
+			div.lead
+				| Experiences Near 
+				a Bellingham, WA
+			ul.thumbnails
+				li.span4(style="position:relative;")
+					a.thumbnail(href="#",style="min-height:280px")
+						img(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/946/extra_large_SideTour_Morningside_Heights.jpg")
+						div.pas
+							div.title(style="font-size:20px;font-weight:300;color:black") Marvel at Famed Architectural Wonders in Morningside Heights
+							p By Ryan Miller
+							p(style="position:absolute;bottom:-10px;right:15px;font-size:35px;font-weight:300;color:black") $15
+				li.span4(style="position:relative")
+					a.thumbnail(href="#",style="min-height:280px")
+						img(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/80/sailing.jpg")
+						div.pas
+							div.title(style="font-size:20px;font-weight:300;color:black") Cruise New York Harbor on a Private Sailboat
+							p By Ryan Miller
+							p(style="position:absolute;bottom:-10px;right:15px;font-size:35px;font-weight:300;color:black") $50
+				li.span4(style="position:relative")
+					a.thumbnail(href="#",style="min-height:280px")
+						img(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/615/French_Macarons.jpg")
+						div.pas
+							div.title(style="font-size:20px;font-weight:300;color:black") Make Melt-in-Your-Mouth Macarons with a French Pastry Chef
+							p By Ryan Miller
+							p(style="position:absolute;bottom:-10px;right:15px;font-size:35px;font-weight:300;color:black") $135
+			div.text-center
+				button.btn.btn-primary.mtm View More Experiences in Bellingham
+			hr
+			div.introduction.text-center
+				h1.hidden-tablet.hidden-phone.desktop 
+					span.logo Aggregus 
+					| is a community marketplace for unique experiences.
+				h1.hidden-desktop.hidden-phone.tablet
+					span.logo Aggregus 
+					| is a community marketplace for unique experiences.
+				h1.hidden-desktop.hidden-tablet.phone
+					| Welcome to
+					br
+					span.logo Aggregus
+				h6.hidden-tablet.hidden-phone.desktop Learn more about Aggregus Experiences, Hosts, and Communities.
+				h6.hidden-desktop.hidden-phone.tablet Learn more about Aggregus Experiences, Hosts, and Communities.
+				h6.hidden-desktop.hidden-tablet.phone A community marketplace for unique experiences.
+				div.concept-row.desktop.hidden-tablet.hidden-phone
+					div.concept-box.span4.mlm
+						h1 Experiences
+						img.img-circle(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/25/extra_large_bankerturnedmonk.jpg")
+						div.desc Try something new, have an adventure, or learn a new skill - an experience can be anything at all!
+						button.btn.btn-primary Learn More About Experiences
+					div.concept-box.span4.mlm
+						h1 Hosting
+						img.img-circle(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/708/extra_large_SideTour_Yoga_Farm.jpg")
+						div.desc Share your passion with your community in an entirely new way. Flexible, pain-free, and rewarding.
+						button.btn.btn-primary Learn More About Hosting
+					div.concept-box.span4.mlm
+						h1 Communities
+						img.img-circle(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/159/extra_large_buddha_bar.jpg")
+						div.desc Discover amazing people and local businesses near you through your unique Aggregus community.
+						button.btn.btn-primary Learn More About Communities
+				div.concept-row.tablet.hidden-desktop.hidden-phone
+					div.concept-box.span4.mlm
+						h1 Experiences
+						img.img-circle(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/25/extra_large_bankerturnedmonk.jpg")
+						div.desc Try something new, have an adventure, or learn a new skill - an experience can be anything at all!
+						button.btn.btn-primary Learn About Experiences
+					div.concept-box.span4.mlm
+						h1 Hosting
+						img.img-circle(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/708/extra_large_SideTour_Yoga_Farm.jpg")
+						div.desc Share your passion with your community in an entirely new, flexible way.
+						button.btn.btn-primary Learn About Hosting
+					div.concept-box.span4.mlm
+						h1 Communities
+						img.img-circle(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/159/extra_large_buddha_bar.jpg")
+						div.desc Discover experiences near you through your unique Aggregus Community.
+						button.btn.btn-primary Learn About Communities
+				div.concept-row.phone.hidden-desktop.hidden-tablet(style="margin-bottom:200px")
+					div.concept-box.span4.mlm.well
+						h1 Experiences
+						img.img-circle(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/25/extra_large_bankerturnedmonk.jpg")
+						div.desc Try something new, have an adventure, or learn a new skill - an experience can be anything at all!
+						button.btn.btn-primary Learn More About Experiences
+					div.concept-box.span4.mlm.well
+						h1 Hosting
+						img.img-circle(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/708/extra_large_SideTour_Yoga_Farm.jpg")
+						div.desc Share your passion with your community in an entirely new way. Flexible, pain-free, and rewarding.
+						button.btn.btn-primary Learn More About Hosting
+					div.concept-box.span4.mlm.well
+						h1 Communities
+						img.img-circle(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/159/extra_large_buddha_bar.jpg")
+						div.desc Discover amazing people and local businesses near you through your unique Aggregus community.
+						button.btn.btn-primary Learn More About Communities
+		p.footer-buffer
+		div.bottom-menu.bottom-menu-inverse
+			div.container
+				div.row
+					div.brand.span2 Aggregus
+					div.span8
+						ul.bottom-links
+							li
+								a Learn More
+							li
+								a Careers
+							li
+								a Privacy
+							li
+								a Terms
+
+					div.span2
+						ul.bottom-icons
+							li
+								a.fui-facebook
+							li
+								a.fui-twitter
+							li
+								a.fui-pinterest
+
+
+
+
+		
+

@@ -18,5 +18,7 @@ secrets.js
 *~
 
 # Mac folder options
+*/*/*/.DS_Store
+*/*/.DS_Store
 */.DS_Store
 .DS_Store

@@ -1,0 +1,109 @@
+.navbar {
+  margin: 0 0 25px 0;
+}
+.navbar .navbar-inner {
+  background-color: #64ecff;
+  border-radius: 0px;
+  position: relative;
+}
+.navbar .navbar-inner .mobile-navbar-fill-left {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  background-color: #64ecff;
+}
+.navbar .navbar-inner .mobile-navbar-fill-right {
+  position: absolute;
+  top: 0px;
+  right: -20px;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  background-color: #64ecff;
+}
+.navbar .navbar-inner .btn-navbar {
+  color: #fff;
+}
+.navbar .navbar-inner .brand {
+  margin: 0 0 0 0px;
+  border: 0;
+  font-size: 27px;
+  font-family: wisdom_scriptregular;
+}
+.navbar .navbar-inner .brand:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.navbar .navbar-inner .nav li {
+  border: 0;
+}
+.navbar .navbar-inner .nav li a {
+  border: 0;
+}
+.navbar .navbar-inner .navbar-search-tablet {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+}
+.navbar .navbar-inner .navbar-search-tablet .login-button {
+  position: absolute;
+  top: 8px;
+  right: 220px;
+}
+.navbar .navbar-inner .navbar-search {
+  margin: -5px 30px 0 -10px;
+  border: 0;
+}
+.navbar .navbar-inner .navbar-search .login-button {
+  padding-left: 12px;
+  background-color: #64ecff;
+  color: #fff;
+  border: 0;
+}
+.navbar .navbar-inner .navbar-search .login-button:hover {
+  background-color: #fff;
+  color: #64ecff;
+}
+.navbar .navbar-inner .navbar-search .mobile-button {
+  border: 0;
+}
+.navbar .navbar-inner .navbar-search p {
+  font-size: 13px;
+}
+.navbar .navbar-inner .navbar-search p strong {
+  font-weight: 700;
+  font-size: 14px;
+}
+.navbar .navbar-inner .navbar-search .input-append input {
+  background-color: #fff;
+  color: #666;
+}
+.navbar .navbar-inner .navbar-search .input-append input:hover {
+  background-color: #fff;
+  color: #666;
+}
+.navbar .navbar-inner .navbar-search .input-append input:active {
+  background-color: #fff;
+  color: #666;
+}
+.navbar .navbar-inner .navbar-search .input-append input:focus {
+  background-color: #fff;
+  color: #666;
+}
+.navbar .navbar-inner .navbar-search .input-append input:visited {
+  background-color: #fff;
+  color: #666;
+}
+.navbar .navbar-inner .navbar-search .input-append .btn {
+  background-color: #fff !important;
+}
+.navbar .navbar-inner .navbar-search .input-append .btn span {
+  color: #64ecff;
+}
+.navbar .navbar-inner .navbar-search .input-append .btn i {
+  color: #64ecff;
+  padding-right: 10px;
+}

@@ -1,0 +1,47 @@
+!!!
+html.city-locked(lang="en")
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+		<!--[if lte IE 8]>
+		link(rel='stylesheet', type='text/css', href='../../css/ie8.css')
+		<![endif]-->
+
+		<!--[if gte IE 9]>
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<![endif]-->
+
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+	body
+		div.navbar(style="margin:0")
+			div.navbar-inner
+				div.container
+					button.btn.btn-navbar(type="button", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand(style="position:relative;height:36px;width:36px;padding:20px;background-color:##93f2ff")
+						span(Style="top:-20px;left:-2px; position:relative;font-size:60px;font-weight:500;color:white") A
+					div#nav-collapse-01.nav-collapse.collapse.pull-right
+						ul.nav
+							li
+								a Learn More
+							li
+								a Login
+		div.container
+			div.hero-unit.text-center(style="background-color:transparent;padding-bottom:0px;margin-bottom:0px")
+				div(style="margin-top:60px;position:relative;left:50%;margin-left:-125px;height:250px;width:250px;background-color:rgba(0, 0, 0, 0.5); border-radius:125px")
+					i.icon-lock(style="font-size:200px;color:white;margin: 50px 0 0 -115px;")
+					i.icon-key(style="position:absolute;color:#64ecff;font-size:50px;margin:132px 0 0 26px;")
+				div.mtl.mbn.progress
+					div.bar(Style="width: 78%")	
+			h1.mtm.text-center(style="color:white") Bellingham is currently locked.
+			h6.mtn.text-center(style="color:white") Enter your email to get it unlocked. Only 34 more needed!
+			div.text-center.input-group
+				input.span5(type="text", placeholder="Find Your Community", style="height:33px")
+				input.btn.btn-huge.mbm.mlm.btn-primary(type="button", value="Unlock Bellingham!")
+			p
+			div.row
+				button.btn.btn-large.span3.offset3  Learn More
+				button.btn.btn-large.span3.btn-prima Become an Ambassador

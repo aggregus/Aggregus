@@ -1,0 +1,16 @@
+.modal {
+  background-color: #fff;
+}
+.modal .btn-social-facebook {
+  width: 310px;
+}
+.modal.login {
+  width: 400px;
+  margin-left: -200px;
+}
+.modal .control-group {
+  margin-bottom: 0;
+}
+.modal .modal-body {
+  padding-bottom: 12px;
+}

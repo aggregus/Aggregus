@@ -101,12 +101,22 @@
         },
 
         createDropdown: function() {
+            var icon = this.$element[0].dataset.icon;
+            var style = this.$element[0].dataset.style;
+            var width = this.$element[0].dataset.width;
+            if (icon == "none" || "") {
+                var iconString = "<span class='caret'></span>";
+            }
+            else {
+                var iconString = "<span style='position:absolute;top:14px;right:15px;font-size:22px'><i style='"+style+"' class='"+icon+"'></i></span>";
+            }
+
             var drop =
-                "<div class='btn-group select'>" +
+                "<div class='btn-group select' style='"+width+"'>" +
                     "<i class='dropdown-arrow'></i>" +
                     "<button class='btn dropdown-toggle clearfix' data-toggle='dropdown'>" +
                         "<span class='filter-option pull-left'></span>&nbsp;" +
-                        "<span class='caret'></span>" +
+                        iconString +
                     "</button>" +
                     "<ul class='dropdown-menu' role='menu'>" +
                     "</ul>" +
@@ -291,9 +301,6 @@
             var _this = this;
             
             $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
-            
-           
-            
             this.$newElement.on('click', 'li a', function(e){
                 var clickedIndex = $(this).parent().index(),
                     $this = $(this).parent(),

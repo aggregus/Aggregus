@@ -1,0 +1,22 @@
+		div.modal.login
+			div.modal-header 
+				button.close.fui-cross(type="button", onclick="$($(this)[0].parentElement.parentElement).hide()", data-dismiss="modal", aria-hidden="true")
+				h3 Log In
+			div.modal-body.text-center.pbm
+				button.btn.btn-huge.btn-social-facebook Login with Facebook
+				p.mam - or -
+				div.control-group.mbn
+					div.input-append
+						input.span3(type="text", placeholder="Email")
+						span.add-on.fui-user
+				div.control-group
+					div.input-append
+						input.span3(type="password", placeholder="Password")
+						span.add-on.fui-lock
+				p.man
+					| Don't have an account?
+					a  Register Now
+					| .
+			div.modal-footer.man
+				button.btn(type="button") Cancel
+				button.btn.btn-primary(type="button") Login

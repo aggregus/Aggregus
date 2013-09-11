@@ -1,0 +1,178 @@
+!!!
+html(lang="en")
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+		style
+			@font-face {
+				font-family: 'mission_scriptregular';
+				src:url('http://jamestedmondson.com/assets/webfonts/mission-script-webfont.eot');
+				src:url('http://jamestedmondson.com/assets/webfonts/mission-script-webfont.eot?#iefix') format('embedded-opentype'),
+					url('http://jamestedmondson.com/assets/webfonts/mission-script-webfont.woff') format('woff'),
+					url('http://jamestedmondson.com/assets/webfonts/mission-script-webfont.ttf') format('truetype'),
+					url('http://jamestedmondson.com/assets/webfonts/mission-script-webfont.svg#mission_scriptregular') format('svg');
+					font-weight: normal;
+					font-style: normal;
+			}
+			@font-face {
+				font-family: 'wisdom_scriptregular';
+				src:url('http://jamestedmondson.com/assets/webfonts/wisdom_script_aj-webfont.eot');
+				src:url('http://jamestedmondson.com/assets/webfonts/wisdom_script_aj-webfont.eot?#iefix') format('embedded-opentype'),
+					url('http://jamestedmondson.com/assets/webfonts/wisdom_script_aj-webfont.woff') format('woff'),
+					url('http://jamestedmondson.com/assets/webfonts/wisdom_script_aj-webfont.ttf') format('truetype'),
+					url('http://jamestedmondson.com/assets/webfonts/wisdom_script_aj-webfont.svg#wisdom_scriptregular') format('svg');
+					font-weight: normal;
+					font-style: normal;
+			}
+			@font-face {
+				font-family: 'pacifico';
+				src:url('../../css/fonts/pacifico-webfont.eot'),
+					url('../../css/fonts/pacifico-webfont.woff') format('woff'),
+					url('../../css/fonts/pacifico-webfont.ttf') format('truetype'),
+					url('../../css/fonts/pacifico-webfont.svg') format('svg');
+					font-weight: normal;
+					font-style: normal;
+			}
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+	body.experience
+		div.navbar.navbar-inverse.mbn
+			div.navbar-inner
+				div.container
+					button.btn.btn-navbar.collapsed(type="button",style="color:white", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand(style="font-weight:300;margin-top:-8px;margin-left:-10px;color:white;")
+						span(style="font-family:wisdom_scriptregular;font-size:32px;font-weight:100") Aggregus
+					div#nav-collapse-01.nav-collapse.collapse.hidden-tablet
+						form.navbar-form.form-search.navbar-search.pull-right.hidden-tablet.hidden-phone
+							button.mrm.btn-negative.btn(style="border:0px;color:white;background-color:#64ecff;padding:7px 15px 8px 15px;font-size:15px;", type="button") Login
+							div.input-append
+								input.search-query.span3.typeahead(style="color:#666;background-color:white",type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit",style="color:#64ecff;background-color:white") 
+									span.fui-search
+						form.navbar-form.form-inline.form-search.navbar-search.pull-right.hidden-tablet.hidden-desktop
+							div.input-append.mbn
+								input.search-query.span3(style="color:#666;background-color:white",type="text", data-provide="typeahead", placeholder="Email Address")
+								button.btn(type="button",style="color:#64ecff;background-color:white") 
+									i.icon-user(style="padding-right:10px")
+							div.input-append
+								input.search-query.span3(style="color:#666;background-color:white",type="password", data-provide="typeahead", placeholder="Password")
+								button.btn(type="button",style="color:#64ecff;background-color:white") 
+									i.icon-key(style="padding-right:10px")
+							button.btn.btn-primary.span3(style="border:0px;color:#64ecff;margin-bottom:20px") Login
+							div.input-append
+								input.search-query.span3(style="color:#666;background-color:white",type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit",style="color:#64ecff;background-color:white") 
+									span.fui-search
+					form.form-search.form.navbar-search.pull-right.hidden-phone.hidden-desktop(style="margin-top:0")
+						form.form-inline	
+							button.mrl.btn-negative.btn.btn-negative(style="color:white;background-color:#64ecff;border:0px;padding:7px 15px 8px 15px;font-size:15px;margin-top:0px", type="button") Login
+							div.input-append
+								input.typeahead.search-query.span4.typeahead(style="margin-top:0px", type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+		div.hero-unit.hero-unit-desktop.hidden-tablet.hidden-phone.text-center(style=";border-radius:0px;padding:60px 0px 60px 0px;height:350px;background-color:white;background-image:url('http://images4.wikia.nocookie.net/__cb20100131055338/jamescameronsavatar/images/d/dc/Daytime_pandora.jpg');background-size:cover;background-position:center")
+			div.container
+				h1.mtl.fw300.text-shadower.text-center(style="background-image:url('http://s8.postimg.org/3oa6hqp1x/blackout_sprite.png');overflow:visible;background-size:100% 80%;background-repeat:no-repeat;background-position:0px 0px;color:white;font-family: mission_scriptregular;font-size:130px;margin: 0px 0 0 0") 
+					| Experience Pandora
+				h6.fw300.span12.text-shadower(style="background-image:url('http://s8.postimg.org/3oa6hqp1x/blackout_sprite.png');overflow:visible;background-repeat:no-repeat;background-position:center;background-size:650px 60px;color:white;font-family: mission_scriptregular;letter-spacing:1px;font-size:70px;margin: 0px 0 0 0") (Like never before.)
+				button.btn.btn-primary(style="margin-top:20px;font-weight:500;font-family: mission_scriptregular;font-size:50px;padding: 30px;") Let's go!
+				p(style="color:white;font-size:14px;margin-top:5px") Don't live in Bellingham? 
+					u Click here.
+		div.hero-unit.hero-unit-desktop.hidden-desktop.hidden-phone.text-center(style=";border-radius:0px;padding:60px 0px 60px 0px;height:325px;background-color:white;background-image:url('http://images4.wikia.nocookie.net/__cb20100131055338/jamescameronsavatar/images/d/dc/Daytime_pandora.jpg');background-size:cover;background-position:center")
+			div.container
+				h1.mtl.fw300.text-shadower.text-center(style="background-image:url('http://s8.postimg.org/3oa6hqp1x/blackout_sprite.png');overflow:visible;background-size:100% 80%;background-repeat:no-repeat;background-position:0px 0px;color:white;font-family: mission_scriptregular;font-size:100px;margin: 0px 0 0 0") 
+					| Experience Pandora
+				h6.fw300.span12.text-shadower(style="background-image:url('http://s8.postimg.org/3oa6hqp1x/blackout_sprite.png');overflow:visible;background-repeat:no-repeat;background-position:center;background-size:650px 60px;color:white;font-family: mission_scriptregular;letter-spacing:1px;font-size:70px;margin: 0px 0 0 0") (Like never before.)
+				button.btn.btn-primary(style="margin-top:20px;font-weight:500;font-family: mission_scriptregular;font-size:50px;padding: 30px;") Let's go!
+				p(style="color:white;font-size:14px;margin-top:5px") Don't live in Bellingham? 
+					u Click here.
+		div.hero-unit.hero-unit-desktop.hidden-tablet.hidden-desktop.text-center(style="border-radius:0px;padding:60px 0px 60px 0px;height:300px;margin-top:-1px;background-color:white;background-image:url('http://images4.wikia.nocookie.net/__cb20100131055338/jamescameronsavatar/images/d/dc/Daytime_pandora.jpg');background-size:cover;background-position:center")
+			div.container
+				h1.mtl.fw300.text-shadower.text-center(style="background-image:url('http://s8.postimg.org/3oa6hqp1x/blackout_sprite.png');overflow:visible;background-size:100% 80%;background-repeat:no-repeat;background-position:0px 0px;color:white;font-family: mission_scriptregular;font-size:65px;margin: 0px 0 0 0") 
+					| Experience Pandora
+				h6.fw300.span12.text-shadower(style="background-image:url('http://s8.postimg.org/3oa6hqp1x/blackout_sprite.png');overflow:visible;background-repeat:no-repeat;background-position:center;background-size:650px 60px;color:white;font-family: mission_scriptregular;letter-spacing:1px;font-size:35px;margin: 0px 0 0 0") (Like never before.)
+				button.btn.btn-primary(style="margin-top:20px;font-weight:500;font-family: mission_scriptregular;font-size:30px;padding: 15px;") Let's go!
+				p(style="color:white;font-size:14px;margin-top:5px") Don't live in Bellingham? 
+					u Click here.
+		div.container.homepage
+			div.lead(style="")
+				| Experiences Near
+				a(href="www.google.com")  Bellingham, WA
+			div.span4(style="border-radius: 6px;position:relative;margin:0 12px 20px 0;height:250px;background-image:url('https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/700/Soho.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+					div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+						div.lead(style="line-height:22px;margin:0;font-size:20px;") Discover the Gangs and Mobs of Old NYC on a Guided Walk
+						div.lead(style="line-height:17px;margin:1px 0 0 0;font-size:17px;")
+							| by 
+							a.fw500(style="color:#64ecff; font-weight:500") Robin London
+					div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $10
+			div.span4(style="border-radius: 6px;position:relative;margin:0 12px 20px 0;height:250px;background-image:url('https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/794/st_madg.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+					div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+						div.lead(style="line-height:22px;margin:0;font-size:20px;") Bring Your Child to a Creative Outdoor Sketching Session
+						div.lead(style="line-height:17px;margin:1px 0 0 0;font-size:17px;")
+							| by 
+							a.fw500(style="color:#64ecff; font-weight:500") Valeen Bhat
+					div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $10
+			div.span4(style="border-radius: 6px;position:relative;margin:0 0px 20px 0;height:250px;background-image:url('https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/25/extra_large_bankerturnedmonk.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+					div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+						div.lead(style="line-height:22px;margin:0;font-size:20px;") Travel Back to Relive Greenwich Village’s Beatnik Renaissance
+						div.lead(style="line-height:17px;margin:1px 0 0 0;font-size:17px;")
+							| by 
+							a.fw500(style="color:#64ecff; font-weight:500") Sandra Schulman
+					div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $10
+			div.span12.text-center
+				button.btn.btn-primary View more Bellingham experiences
+			hr.span12.mhn
+			div.mbs.desc.hidden-phone.hidden-tablet(style="font-size:35px;width:100%;")
+				span(style="color:#64ecff;font-weight:300") Aggregus
+				span  is a community marketplace for unique experiences.
+			div.mbs.desc.hidden-desktop(style="font-size:27px;width:100%;")
+				span(style="color:#64ecff;font-weight:300;") Aggregus 
+				span is a community marketplace for unique experiences.
+			div.desc.hidden-phone.hidden-tablet(style="margin-bottom:40px;font-size:25px;width:100%;")
+				span(style="font-weight:100") Learn more about Aggregus Experiences, Hosts, and Communities.
+			div.desc.hidden-desktop.text-center(style="font-size:22px;width:100%;")
+				span(style="font-weight:100") Learn more about Aggregus Experiences, Hosts, and Communities.
+			div.row	
+				div.span4.conceptBox.text-center
+					h4.hidden-desktop.hidden-phone.fw500.text-center.mbl.mtm Experiences
+					h3.hidden-tablet.text-center.fw300.mbl.mtm Experiences
+					img.img-circle(style="height:150px;width:150px;", src="https://a1.muscache.com/locations/uploads/photo/image/27529/0_3400_0_2848_one_Bondi_Air_B_and_B_25.jpg")
+					div.fw300.mal(style="font-size:22px;line-height:22px") Opportunities, to try something new, learn a skill, or just have fun.
+					button.btn.btn-primary.text-center Learn About Experiences
+				div.span4.conceptBox.text-center
+					h4.hidden-desktop.fw500.hidden-phone.text-center.mbl.mtm Hosting
+					h3.hidden-tablet.text-center.fw300.mbl.mtm Hosting
+					img.img-circle(style="height:150px;width:150px;", src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/18136460/coverimgs/1374692288501.jpg")
+					div.fw300.mal(style="font-size:22px;line-height:22px") Share your passion with your community like never before.
+					button.btn.text-center.btn-primary Learn About Hosting
+				div.span4.conceptBox.text-center
+					h4.hidden-desktop.hidden-phone.fw500.text-center.mbl.mtm Communities
+					h3.hidden-tablet.text-center.fw300.mbl.mtm Communities
+					img.img-circle(style="height:150px;width:150px;", src="https://a3.muscache.com/locations/uploads/photo/image/27559/0_4200_0_2800_one_Bondi_Air_B_and_B_29.jpg")
+					div.fw300.mal(style="font-size:22px;line-height:22px") Connect with amazing individuals and local businesses near you.
+					button.btn.text-center.btn-primary Learn About Communities
+			div.desc(style="margin-bottom:0px;font-size:25px;width:100%;")
+				span(style="font-weight:100") 
+					| Are you a local business? Learn about 
+					a(href="www.google.com") Aggregus for Local Business.
+		div.mtl.bottom-menu(style="background-color:#64ecff;color:white")
+			div.container
+				div.row
+					div.span2.brand
+						| Aggregus
+					div.span8
+						ul.bottom-links
+							li
+								a Stuff
+							li
+								a and Things
+					div.span2
+						ul.bottom-icons
+							li
+								a.fui-facebook.
+							li
+								a.fui-twitter
+							li
+								a.fui-pinterest

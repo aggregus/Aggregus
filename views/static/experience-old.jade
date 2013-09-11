@@ -1,0 +1,187 @@
+!!!
+html(lang="en")
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+		<!--[if lte IE 8]>
+		link(rel='stylesheet', type='text/css', href='../../css/ie8.css')
+		<![endif]-->
+
+		<!--[if gte IE 9]>
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<![endif]-->
+
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+	body.experience
+		div.navbar
+			div.navbar-inner
+				div.container
+					button.btn.btn-navbar.collapsed.hidden-tablet(type="button",style="color:white", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand(style="font-weight:300;color:white;")
+						i.fui-flat
+					div#nav-collapse-01.nav-collapse.collapse.hidden-tablet
+						form.navbar-form.form-search.navbar-search.pull-right.hidden-tablet.hidden-phone
+							button.mrm.btn-negative.btn(style="border:0px;color:white;background-color:#64ecff;padding:7px 15px 8px 15px;font-size:15px;", type="button") Login
+							div.input-append
+								input.search-query.span3(type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+						form.navbar-form.form-inline.form-search.navbar-search.pull-right.hidden-tablet.hidden-desktop
+							button.mrm.btn-negative.span3.btn(style="border:0px;color:#64ecff;background-color:white;padding:7px 15px 8px 15px;font-size:15px;", type="button") Learn More
+							button.mrm.btn-negative.span3.btn(style="border:0px;color:#64ecff;background-color:white;padding:7px 15px 8px 15px;font-size:15px;margin-bottom:10px;", type="button") Login
+							div.input-append
+								input.search-query.span3(type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+					form.form-search.form.navbar-search.pull-right.hidden-phone.hidden-desktop
+						form.form-inline	
+							button.mrl.btn-negative.btn.btn-negative(style="color:white;background-color:#64ecff;border:0px;padding:7px 15px 8px 15px;font-size:15px;margin-top:0px", type="button") Login
+							div.input-append
+								input.search-query.span4(type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+		div.container.body
+			div.alert.alert-error
+				button.close.fui-cross(type="button", data-dismiss="alert")
+				h3 Your account is at risk.
+				p
+					| This is a bad thing. 
+					a(href="#") Click here 
+					| to experience relief.
+
+			div.row
+				div.span9
+					div.hero-unit(style="height:200px;margin-bottom:15px;background-size:cover;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/16432720/coverimgs/1375904794676.jpg')")
+						img.img-circle.img-polaroid(style="margin:-5px 0 0 -5px", height="200", width="200", src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/16432720/profileimgs/1375904794676.jpg")
+					div.row
+						div.span7.hidden-phone(style="float:right")
+							div.page-header(style="margin: 0px 0 20px 0")
+								h3(style="font-weight:500") An Evening of Music with Sarah Goodin
+								h6 by 
+									a(style="font-weight:300") Sarah Goodin
+						div.span7.hidden-desktop.hidden-tablet
+							div.page-header(style="margin: 0px 0 20px 0")
+								h3(style="font-weight:500") Dashi Summer Dinner Series
+								h6 by 
+									a(style="font-weight:300") Dashi Noodle Bar
+						div.span2
+							ul.media-list(style="margin-top:10px;margin-left:5px")
+								li.media
+									a.pull-left(style="font-size:35px;width:25px")
+										i.icon-usd
+									div.media-body
+										h3.media-heading(style="font-weight:300") 30
+								li.media
+								a.pull-left(style="font-size:25px;width:25px")
+									i.icon-group(style="margin-left:-5px")
+								div.media-body
+									h3.media-heading(style="font-weight:300") 1-5
+								li.media
+								a.pull-left(style="font-size:30px;width:25px")
+									i.icon-time(style="margin-left:-5px")
+								div.media-body
+									h3.media-heading(style="font-weight:300") 2 Hrs
+								hr
+								button#social.btn.btn-huge.btn-primary(style="width:100%") 
+									| Share
+						div.span7
+							div.lead Description
+							p.span7.pull-right					
+								| Join me, Sarah Goodin, in an intimate evening of music and assorted good things. Includes Q&A and a free signed copy of Sarah's latest release. Up to two song requests available per evening!
+							div.lead
+								| About 
+								a(href="#") Sarah Goodin
+							p.span7.pull-right
+								| Sarah sings songs and they are good. She plays songs for people who listen. They are nice songs.
+							div.lead Location
+							div#map.img-polaroid
+							div.lead Reviews
+							ul.media-list
+								li.media
+									a.pull-left(href="#")
+										img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/18090903/profileimgs/1376502804938.jpg")
+									div.media-body
+										h6.media-heading Sarah was absolutely amazing!
+										p Sarah was wonderful. She sang us songs and we had a great time. Her CD is on auto-play in my apartment non-stop.
+								li.media
+									a.pull-left(href="#")
+										img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/RyanMiller16899724/profileimgs/1374531530346.jpg")
+									div.media-body
+										h6.media-heading Well howdy-do!
+										p Now that's what I call a voice! Nice job Sarah, we had a great time!
+							div.lead.pull Photos
+							div#photos.carousel.slide
+								ol.carousel-indicators
+									li.active(data-target="photos", data-slide-to="0")
+									li(data-target="photos", data-slide-to="1")
+								div.carousel-inner
+									div.active.item
+										img(src="http://s9.postimg.org/ky8vuxpsv/Thing.jpg")
+									div.item
+										img(src="http://sailbeach.com/user/cimage/Beach-House.jpg")
+								a.carousel-control.fui-arrow-left.left(href="#photos", data-slide="prev")
+								a.carousel-control.fui-arrow-right.right(href="#photos", data-slide="next")
+							p
+							div.lead.pull Video
+							div.span7.flex-video.widescreen
+								iframe(src="//www.youtube.com/embed/tv6lzSuTHhs", frameborder="", allowfullscreen)
+
+				div.span3
+					div.lead.text-left(style="font-size:48px;margin-bottom:-0px;margin-top:-10px") Book It!
+					div.control-group
+						input.span3(type="text", placeholder="Your Name?")
+						i.input-icon.icon-user(style="margin-right:0px 0px 0px 0px")
+					div.control-group
+						input#datepicker-01.span3(type="text", placeholder="Choose A Date")
+						i.input-icon.icon-calendar(style="margin-right:1px")
+					select.select.span3(data-icon="icon-time",data-width="width:100%", data-style="", style="position:relative;width:100%")
+						option(selected) What Time?
+						option 5 PM
+						option 6 PM
+						option 7 PM
+						option 8 PM
+					select.select(data-icon="icon-group",data-width="width:100%", data-style="margin-left:-7px;margin-top:-3px", style="position:relative;width:100%")
+						option(selected) Group size?
+						option 1
+						option 2
+						option 3
+					button.btn.btn-huge.btn-primary(style="width:100%") Book Now
+					hr
+					div.lead(style="font-size:28px;margin-bottom:10px;margin-top:-10px") Sarah's Community
+					div#photos2.carousel.slide
+						div.carousel-inner
+							div.active.item
+								img(style="height:300px", src="http://media-cdn.tripadvisor.com/media/photo-s/00/1a/a8/21/bellingham-bay.jpg")
+						div.carousel-caption
+							h4 Bellingham
+							p Land of abundant marijuana and trees.
+					p
+					button.btn.btn-primary(style="width:100%") View Community
+					p
+		div.bottom-menu(style="background-color:#64ecff;color:white")
+			div.container
+				div.row
+					div.span2.brand
+						| Aggregus
+					div.span8
+						ul.bottom-links
+							li
+								a Stuff
+							li
+								a and Things
+					div.span2
+						ul.bottom-icons
+							li
+								a.fui-facebook.
+							li
+								a.fui-twitter
+							li
+								a.fui-pinterest
+		script.
+			map = L.map('map', {touchZoom:false, scrollWheelZoom: false}).setView([48.7502, -122.4750], 15);
+			L.tileLayer('https://a.tiles.mapbox.com/v3/aggregus.map-keakb9ot/{z}/{x}/{y}.png', {maxZoom: 20}).addTo(map);
+			var marker = L.marker([48.7502, -122.4750]).addTo(map);

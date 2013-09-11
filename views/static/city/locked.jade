@@ -1,0 +1,119 @@
+!!!
+html(lang="en", prefix="og: http://ogp.me/ns#")
+	head
+
+		title Aggregus
+
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1")
+		meta(charset="utf-8")
+
+		meta(name="description", content="A community marketplace for unique experiences.")
+		meta(name="keywords", content="Aggregus, experiences, community, adventures, community ambassador, community ambassadors, hosting")
+		meta(name="author", content="Aggregus LLC")
+
+		meta(property="og:title", content="Aggregus")
+		meta(property="og:description", content="A community marketplace for unique experiences.")
+		meta(property="og:determiner", content="")
+		meta(property="og:type", content="website")
+		meta(property="og:url", content="https://www.aggregus.com")
+		meta(property="og:image:url", content="http://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+		meta(property="og:image:url_secure", content="https://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+		meta(property="og:image:type", content="image/png")
+		meta(property="og:image:height", content="1000")
+		meta(property="og:image:width", content="1000")
+
+		meta(name="twitter:card", content="summary")
+		meta(name="twitter:site", content="@aggregus")
+		meta(name="twitter:creator", content="@aggregus")
+		meta(name="twitter:title", content="Aggregus")
+		meta(name="twitter:description", content="A community marketplace for unique experiences.")
+		meta(name="twitter:image", content="https://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+
+		link(rel="stylesheet", type="text/css", href="../../css/aggregus.css")
+
+		script(type="text/javascript", data-main='../../main.js', src='../../lib/require.js')
+		script(type="text/javascript", src='http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js')
+
+	body.community.locked(style="background-image:url('http://farm1.staticflickr.com/223/500014042_1f4d1e4baf_o.jpg')")
+		div.overcast
+		div.navbar.navbar-inverse#top
+			div.navbar-inner
+				div.hidden-desktop.hidden-tablet.mobile-navbar-fill-left
+				div.hidden-desktop.hidden-tablet.mobile-navbar-fill-right
+				div.container
+					button.btn.btn-navbar.collapsed.hidden-tablet(type="button", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand Aggregus
+					div#nav-collapse-01.nav-collapse.in.collapse
+						form.hidden-desktop.hidden-tablet.navbar-form.form-search.navbar-search.span3
+							div.input-append
+								input.search-query.span3(type="text", placeholder="Email")
+								button.btn(type="button") 
+									i.icon-user
+							div.input-append
+								input.search-query.span3(type="password", placeholder="Password")
+								button.btn(type="button") 
+									i.icon-key
+							button.btn.mobile-button.span3.mbn(type="button") Login
+							p.mtm.mbn.text-center
+								| Don't have an account?
+								strong  
+									a Register here.
+							hr.mtm
+							div.input-append
+								input.search-query.span3(type="text", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+							p
+						form.hidden-tablet.hidden-phone.navbar-form.form-search.navbar-search.pull-right
+							button.btn.mrm.login-button Login
+							button.btn.mrm.login-button Join
+							div.input-append
+								input.search-query.typeahead(type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+					form.hidden-desktop.hidden-phone.navbar-form.form-inline.form-search.navbar-search.navbar-search-tablet.span3.pull-right
+						button.btn.mrm.login-button Login
+						div.input-append
+							input.search-query.span3(type="text", placeholder="Find Your Community")
+							button.btn(type="submit") 
+								span.fui-search
+		div.container
+			div.hero-unit.desktop
+				h1.text-center Want Aggregus in Bellingham?
+				h6.text-center Unlock it!
+				hr
+			div.row
+				input.span9(style="height:50px;line-height:60px;font-size:50px;margin:0",type="text", placeholder="Enter Your Email")
+				btn.span2.hidden-desktop.btn.btn-primary.pull-right(style="height:50px") Unlock it!
+				btn.span3.hidden-tablet.btn.btn-primary.pull-right(style="margin:0;height:49px;line-height:50px;font-size:40px") Unlock it!
+			div.row.text-center
+				button.btn.span4.btn-social-twitter(style="margin:5px")
+					span.fui-twitter
+				button.btn.span4.btn-social-pinterest(style="margin:5px")
+					span.fui-pinterest
+				button.btn.span4.btn-social-googleplus(style="margin:5px")
+					span.fui-googleplus
+		div.bottom-menu.bottom-menu-inverse
+			div.container
+				div.row
+					div.brand.span2 Aggregus
+					div.span8
+						ul.bottom-links
+							li
+								a Learn More
+							li
+								a Careers
+							li
+								a Privacy
+							li
+								a Terms
+
+					div.span2
+						ul.bottom-icons
+							li
+								a.fui-facebook
+							li
+								a.fui-twitter
+							li
+								a.fui-pinterest
+

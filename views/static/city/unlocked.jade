@@ -1,0 +1,187 @@
+!!!
+html(lang="en")
+	head
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+		<!--[if lte IE 8]>
+		link(rel='stylesheet', type='text/css', href='../../css/ie8.css')
+		<![endif]-->
+
+		<!--[if gte IE 9]>
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<![endif]-->
+
+		link(rel='stylesheet', type='text/css', href='../../css/aggregus.css')
+		script(type='text/javascript', data-main='../../main.js', src='../../lib/require.js')
+		<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+
+	body
+		div.navbar
+			div.navbar-inner
+				div.container
+					button.btn.btn-navbar.collapsed(type="button", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand(style="position:relative;height:36px;width:36px;padding:20px;background-color:#93f2ff")
+						span(Style="top:-20px;left:-2px; position:relative;font-size:60px;font-weight:500;color:white") A
+					div#nav-collapse-01.nav-collapse.in.collapse
+						ul.nav.pull-right
+							li
+								a Learn More
+							li
+								a Login
+							form.navbar-search.form-search.pull-right
+								div.input-append
+									input.search-query.span3(type="text", placeholder="Search Communities")
+									button.btn.btn-large(type="submit", style="padding-bottom:7.5px")
+										i.fui-search
+		div.container
+			div.hero-unit(style="background-image:url('http://media-cdn.tripadvisor.com/media/photo-s/00/1a/a8/21/bellingham-bay.jpg');background-size:cover;background-position:center;height:350px")
+				div.container
+					div.span9(style="font-weight:300;color:white")
+						h1(style="font-weight:300") Welcome to Bellingham
+						h6(style="font-weight:300") Land of subdued excitement.
+					div.span3
+			div.row
+				div.span8
+					h2(style="font-weight:300;margin: -10px 0px 20px -3px")
+						| Experiences in Bellingham
+					ul.nav.nav-pills
+						li
+							a Featured
+						li
+							a Most Reviewed
+						li
+							a Price
+						input.mll(placeholder="search", type="text")
+					div.span4(style="border-radius: 6px;position:relative;margin:0 12px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/18136460/coverimgs/1374692288501.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:22px;margin:0;font-size:20px;") Guatemalan Coffee Flight
+							div.lead(style="line-height:22px;margin:0;font-size:17px;")
+								| by 
+								a(style="color:#57DFF2") Onyx Coffee
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $10
+					div.span4(style="border-radius: 6px;position:relative;margin:0 0px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/16432720/coverimgs/1375904794676.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:22px;margin:0;font-size:20px;") An Evening of Music with Sarah Goodin
+							div.lead(style="line-height:22px;margin:0;font-size:17px;")
+								| by 
+								a(style="color:#57DFF2;font-weight:300") Sarah Goodin
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $30
+					div.span4(style="border-radius: 6px;position:relative;margin:0 12px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/RyanMiller16899724/coverimgs/1374505988680.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:22px;margin:0;font-size:20px;") An Introduction to the Finer Side of Bellingham Nightlife
+							div.lead(style="line-height:22px;margin:0;font-size:17px;")
+								| by 
+								a(style="color:#57DFF2") Ryan Miller
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $20
+					div.span4(style="border-radius: 6px;position:relative;margin:0 0px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/17381374/coverimgs/1374679679299.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:22px;margin:0;font-size:20px;") Dashi Summer Dinner Series
+							div.lead(style="line-height:22px;margin:0;font-size:17px;")
+								| by 
+								a(style="color:#57DFF2") Dashi Noodle Bar
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $65
+					div.span4(style="border-radius: 6px;position:relative;margin:0 12px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/17295227/coverimgs/1375208009962.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:20px;margin:0;font-size:20px;") Take over 250|flora for an evening!
+							div.lead(style="line-height:30px;margin:0;font-size:15px;")
+								| by 
+								a The Wafl Stop
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $20
+					div.span4(style="border-radius: 6px;position:relative;margin:0 0px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/16609011/coverimgs/1375558298343.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:30px;margin:0;font-size:22px;") Super Smash Your Way to 10 Free Waffles!
+							div.lead(style="line-height:30px;margin:0;font-size:15px;")
+								| by 
+								a Onyx Coffee
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $20
+					div.span4(style="border-radius: 6px;position:relative;margin:0 12px 20px 0;height:225px;background-image:url('https://d2qjfe4gq0m6av.cloudfront.net/experiences/18136460/coverimgs/1374692288501.jpg');background-size:cover;background-position:center;border: 2px solid #FAFAFA;box-shadow: 0 1px 2px rgb(34, 25, 25);box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);")
+						div(style="background-color:rgba(255,255,255,0.95);padding:10px;color:#444")
+							div.lead(style="line-height:30px;margin:0;font-size:22px;") Guatemalan Coffee Flight
+							div.lead(style="line-height:30px;margin:0;font-size:15px;")
+								| by 
+								a Onyx Coffee
+						div.pull-right(style="font-size:30px;border-radius: 6px 0 0 0;bottom:0px;right:0px;font-weight:300;position:absolute;background-color:rgba(255,255,255,0.95);padding:10px;") $20
+					div.pagination.span8.mln.mtn
+						ul
+							li.previous
+								a.fui-arrow-left
+							li
+								a 1
+							li
+								a 2
+							li
+								a 3
+							li
+								a 4
+							li
+								a 5
+							li.next
+								a.fui-arrow-right
+					hr.span8.mln
+					div.lead.span8.mln Photos
+					div#photos.carousel.slide.span8.mln
+						ol.carousel-indicators
+							li.active(data-target="photos", data-slide-to="0")
+							li(data-target="photos", data-slide-to="1")
+						div.carousel-inner
+							div.active.item
+								img(src="http://s9.postimg.org/ky8vuxpsv/Thing.jpg")
+							div.item
+								img(src="http://sailbeach.com/user/cimage/Beach-House.jpg")
+						a.carousel-control.fui-arrow-left.left(href="#photos", data-slide="prev")
+						a.carousel-control.fui-arrow-right.right(href="#photos", data-slide="next")
+					hr.span8.mln
+					div.lead.span8.mln Video
+					div.span8.flex-video.widescreen
+						iframe(src="//www.youtube.com/embed/tv6lzSuTHhs", frameborder="", allowfullscreen)
+				div.span3.offset1
+					div.lead.mtn(style="font-size:28px;") Meet the Ambassador
+						br
+						img.mts.img-circle(height="75", width="75", src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/RyanMiller16899724/profileimgs/1374531530346.jpg")
+						div.lead.mbn Ryan Miller
+						p(style="line-height:20px").mtn.mbn Ryan is cool dude who knows Bellingham really well.
+					hr.mbl.mtn
+					button#social.btn.btn-huge.btn-primary(style="width:100%") 
+						| Share
+					hr.mbs
+					div.lead.mbm.mtn Community Badges
+					div.text-center.mtx.mbm
+						img(title="mystery...",style="margin: 0 6px 6px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+						img(style="margin: 0 5px 5px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+						img(style="margin: 0 5px 5px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+						img(style="margin: 0 5px 5px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+						img(style="margin: 0 5px 5px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+						img(style="margin: 0 5px 5px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+					hr
+					div.lead(style="font-size:28px;margin-bottom:10px;margin-top:-10px") About Bellingham
+						div#photos2.carousel.slide
+							div.carousel-inner
+								div.active.item
+									img(style="height:300px", src="http://media-cdn.tripadvisor.com/media/photo-s/00/1a/a8/21/bellingham-bay.jpg")
+							div.carousel-caption
+								h4 Bellingham
+								p Land of abundant marijuana and trees.
+					hr.mbm
+					div.lead.mtm.mbn Newsletter
+					p Signup for the Bellingham community newsletter! It supa dope!
+					input.span3(type="text")
+					hr.mbm
+					div.lead.mtm.mbn MeetUp
+					p Bellingham's next Aggregus MeetUp is on
+					h3 March 26th
+					button.btn.btn-block Learn More
+					hr
+
+
+		div.bottom-menu(style="margin-top:20px")
+			div.container
+				div.row
+					div.span2.brand
+						a.fui-flat(href="#")
+					div.span8
+						ul.bottom-links
+							li
+								a Stuff
+							li
+								a and Things

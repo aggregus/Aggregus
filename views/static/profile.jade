@@ -1,48 +1,308 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+!!!
+html(lang="en", prefix="og: http://ogp.me/ns#")
+	head
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="description" content="Aggregus is a community marketplace for unique experiences. We're revolutionizing how people share, create, and discover awesome experiences by individuals and local businesses near them." />
-<meta name="author" content="Aggregus LLC" />
+		title Aggregus
 
-meta(property="og:image", content=profileimg)
-meta(property="og:title", content=name)
-meta(property="og:url", content='https://www.aggregus.com/shareuser/'+aggid+'/#profile/'+aggid)
-meta(property="og:description", content=description)
-meta(property="og:site_name", content="Aggregus")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1")
+		meta(charset="utf-8")
 
-<link rel="shortcut icon" href="https://d2qjfe4gq0m6av.cloudfront.net/assets/favicon.ico">
+		meta(name="description", content="A community marketplace for unique experiences.")
+		meta(name="keywords", content="Aggregus, experiences, community, adventures, community ambassador, community ambassadors, hosting")
+		meta(name="author", content="Aggregus LLC")
 
-<title>Aggregus</title> 
+		meta(property="og:title", content="Aggregus")
+		meta(property="og:description", content="A community marketplace for unique experiences.")
+		meta(property="og:determiner", content="")
+		meta(property="og:type", content="website")
+		meta(property="og:url", content="https://www.aggregus.com")
+		meta(property="og:image:url", content="http://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+		meta(property="og:image:url_secure", content="https://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
+		meta(property="og:image:type", content="image/png")
+		meta(property="og:image:height", content="1000")
+		meta(property="og:image:width", content="1000")
 
-<!--[if lte IE 8]>
-<link href="../../css/ie8.css" type="text/css" rel="stylesheet" />
-<![endif]--> 
+		meta(name="twitter:card", content="summary")
+		meta(name="twitter:site", content="@aggregus")
+		meta(name="twitter:creator", content="@aggregus")
+		meta(name="twitter:title", content="Aggregus")
+		meta(name="twitter:description", content="A community marketplace for unique experiences.")
+		meta(name="twitter:image", content="https://s3-us-west-2.amazonaws.com/aggregus-production/assets/Logos/Logo1000x1000.png")
 
-<!--[if gte IE 9]>
-<link href="../../css/aggregus.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" data-main="../../main.js" src="../../lib/require.js"></script>
-<![endif]-->
- 
-<!--[if !IE]><!-->
-<link href="../../css/aggregus.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" data-main="../../main.js" src="../../lib/require.js"></script>
-<!--<![endif]-->
+		link(rel="stylesheet", type="text/css", href="../../css/aggregus.css")
 
-</head>
+		script(type="text/javascript", data-main='../../main.js', src='../../lib/require.js')
+		script(type="text/javascript", src='http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js')
 
-<body class="nooverflo">
+	body.profile
+		div.navbar.navbar-inverse#top
+			div.navbar-inner
+				div.hidden-desktop.hidden-tablet.mobile-navbar-fill-left
+				div.hidden-desktop.hidden-tablet.mobile-navbar-fill-right
+				div.container
+					button.btn.btn-navbar.collapsed.hidden-tablet(type="button", data-toggle="collapse", data-target="#nav-collapse-01")
+					div.brand Aggregus
+					div#nav-collapse-01.nav-collapse.in.collapse
+						form.hidden-desktop.hidden-tablet.navbar-form.form-search.navbar-search.span3
+							div.input-append
+								input.search-query.span3(type="text", placeholder="Email")
+								button.btn(type="button") 
+									i.icon-user
+							div.input-append
+								input.search-query.span3(type="password", placeholder="Password")
+								button.btn(type="button") 
+									i.icon-key
+							button.btn.mobile-button.span3.mbn(type="button") Login
+							p.mtm.mbn.text-center
+								| Don't have an account?
+								strong  
+									a Register here.
+							hr.mtm
+							div.input-append
+								input.search-query.span3(type="text", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+							p
+						form.hidden-tablet.hidden-phone.navbar-form.form-search.navbar-search.pull-right
+							button.btn.mrm.login-button Login
+							button.btn.mrm.login-button Join
+							div.input-append
+								input.search-query.typeahead(type="text", data-provide="typeahead", placeholder="Find Your Community")
+								button.btn(type="submit") 
+									span.fui-search
+					form.hidden-desktop.hidden-phone.navbar-form.form-inline.form-search.navbar-search.navbar-search-tablet.span3.pull-right
+						button.btn.mrm.login-button Login
+						div.input-append
+							input.search-query.span3(type="text", placeholder="Find Your Community")
+							button.btn(type="submit") 
+								span.fui-search
+		div.container.hidden-tablet					
+			div.row
+				div.span3.pull-left
+					div.img-polaroid.pal.mbl(style="border-radius:6px")
+						img.img-polaroid(width="100%",style="margin-left:-5px",src="https://d2qjfe4gq0m6av.cloudfront.net/users/RyanMiller16899724/profileimgs/1374381328674.jpg")
+						p
+						div.lead(style="font-size:35px;line-height:35px") Onyx Coffee Bar
+						span(style="font-size:16px")
+							i.icon-calendar.mrm(style="color:#64ecff")
+							| Joined 
+							| August 2013
+					h4(style="font-size:33px;font-family:wisdom_scriptregular;") My Community
+					div.community.pull-left.mbl
+						div.image(style="background-image:url('http://media-cdn.tripadvisor.com/media/photo-s/00/1a/a8/21/bellingham-bay.jpg')")
+							div.footer 
+								div.title Bellingham
+								div.desc Land of abundant trees and heady ganja.
+						button.btn.btn-block.btn-primary.mtm View Community
+					h4(style="font-size:33px;font-family:wisdom_scriptregular;") My Experiences
+					ul.thumbnails
+						li.span3(style="position:relative;")
+							a.thumbnail(href="#",style="min-height:260px")
+								img(src="https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/946/extra_large_SideTour_Morningside_Heights.jpg")
+								div.pas
+									div.title(style="font-size:20px;font-weight:300;color:black") Marvel at Famed Architectural Wonders in Morningside Heights
+									p By Ryan Miller
+									p(style="position:absolute;bottom:-10px;right:15px;font-size:35px") $15
+					h4(style="font-size:33px;font-family:wisdom_scriptregular") My Badges
+					div.mtx.mbm
+						img(style="margin: 0 5px 5px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+						img(style="margin: 0 5px 5px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+					h4.mvl(style="font-size:33px;font-family:wisdom_scriptregular") My Profiles
+					div.hidden-phone
+						button.btn.btn-block.btn-social-facebook
+							i.fui-facebook
+						button.btn.btn-block.btn-social-twitter
+							i.fui-twitter
+						button.btn.btn-block.btn-social-pinterest
+							i.fui-pinterest
+					h4.mvl(style="font-size:33px;font-family:wisdom_scriptregular") Share
+					button#social.btn.btn-huge.btn-primary(style="width:100%") 
+						| Share
+				div.span9.main.pull-right.mtl
+					div.lead.mvl(style="font-family:wisdom_scriptregular;font-size:50px;line-height:50px") About Onyx Coffee Bar
+					hr
+					p(style="margin-bottom:50px") Hi there! I'm the founder of Aggregus.com, and when I'm not buried in code trying to keep the site from crashing, I'm drinking my favorite Unibroue beer, reading Wallace Stevens, and trying to curb my obsession with Ridiculous Fishing. But that's never going to happen...
+					div.lead.mvl(style="font-family:wisdom_scriptregular;font-size:50px;margin-top:30px") Reviews
+					hr
+					ul.media-list(style="margin-bottom:50px")
+						li.media
+							a.pull-left(href="#")
+								img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/18090903/profileimgs/1376502804938.jpg")
+							div.media-body
+								h6.media-heading Sarah was absolutely amazing!
+								p.mbn Sarah was wonderful. She sang us songs and we had a great time. Her CD is on auto-play in my apartment non-stop.
+								i.icon-home
+								| Reviewed as Host
+						li.media
+							a.pull-left(href="#")
+								img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/RyanMiller16899724/profileimgs/1374531530346.jpg")
+							div.media-body
+								h6.media-heading Well howdy-do!
+								p.mbn Now that's what I call a voice! Nice job Sarah, we had a great time!
+								i.icon-user
+								| Reviewed as Guest
+						li.media
+							a.pull-left(href="#")
+								img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/18090903/profileimgs/1376502804938.jpg")
+							div.media-body
+								h6.media-heading Sarah was absolutely amazing!
+								p.mbn Sarah was wonderful. She sang us songs and we had a great time. Her CD is on auto-play in my apartment non-stop.
+								i.icon-home
+								| Reviewed as Host
+						li.media
+							a.pull-left(href="#")
+								img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/RyanMiller16899724/profileimgs/1374531530346.jpg")
+							div.media-body
+								h6.media-heading Well howdy-do!
+								p.mbn Now that's what I call a voice! Nice job Sarah, we had a great time!
+								i.icon-user
+								| Reviewed as Guest
+					div.lead.mvl(style="font-family:wisdom_scriptregular;font-size:50px;margin-top:30px") Photos
+					hr
+					div#photos.carousel.slide
+						ol.carousel-indicators
+							li.active(data-target="photos", data-slide-to="0")
+							li(data-target="photos", data-slide-to="1")
+						div.carousel-inner
+							div.active.item
+								img(src="http://s9.postimg.org/ky8vuxpsv/Thing.jpg")
+							div.item
+								img(src="http://sailbeach.com/user/cimage/Beach-House.jpg")
+						a.carousel-control.fui-arrow-left.left(href="#photos", data-slide="prev")
+						a.carousel-control.fui-arrow-right.right(href="#photos", data-slide="next")
+					div.lead.mvl(style="font-family:wisdom_scriptregular;font-size:50px;margin-top:50px") Video
+					hr
+					div.span9.flex-video.widescreen
+						iframe(src="//www.youtube.com/embed/tv6lzSuTHhs", frameborder="", allowfullscreen)
+		div.container.hidden-phone.hidden-desktop					
+			div.row
+				div.span4.pull-left
+					div.img-polaroid.pal.mbl
+						img.img-polaroid(width="100%",style="margin-left:-5px",src="https://d2qjfe4gq0m6av.cloudfront.net/users/RyanMiller16899724/profileimgs/1374381328674.jpg")
+						p
+						div.lead(style="font-size:35px;line-height:35px") Onyx Coffee Bar
+						span(style="font-size:16px")
+							i.icon-calendar.mrm(style="color:#64ecff")
+							| Joined 
+							| August 2013
+						br
+						p
+						span(style="font-size:16px")
+							i.icon-check.mrm(style="color:green")
+							| Verified User
+						br
+						p
+						span(style="font-size:16px")
+							i.icon-facebook.mrm(style="color:#64ecff")
+							| Facebook Connected
+						p.mal
+					h4(style="font-size:33px;font-family:wisdom_scriptregular;") My Community
+					div.community.pull-left.mbl
+						div.image(style="background-image:url('http://media-cdn.tripadvisor.com/media/photo-s/00/1a/a8/21/bellingham-bay.jpg')")
+							div.footer 
+								div.title Bellingham
+								div.desc Land of abundant trees and heady ganja.
+						button.btn.btn-block.btn-primary.mtm View Community
+					h4(style="font-size:33px;font-family:wisdom_scriptregular;") My Experiences
+					div.experience-card.span4(style="background-image:url('https://s3.amazonaws.com/production.sidetour/uploads/experience/main_image/615/French_Macarons.jpg')")
+						div.header.lead
+							div.title Guatemalan Coffee Flight
+							div.author(style="font-size:17px")
+								| by 
+								a(style="font-size:17px") Olivier Dessyn
+						div.price $135
+					h4.mvl(style="font-size:33px;font-family:wisdom_scriptregular;margin-top:280px") My Badges
+					div.mtx.mbm
+						img(style="margin: 0 5px 5px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+						img(style="margin: 0 5px 5px 0;",width="30%",width="30%", src="http://s9.postimg.org/r8c2g4r4b/Demo.png")
+					h4.mvl(style="font-size:33px;font-family:wisdom_scriptregular") My Profiles
+					div.hidden-phone
+						button.btn.btn-block.btn-social-facebook.mbm
+							i.fui-facebook
+						button.btn.btn-block.btn-social-twitter.mbm
+							i.fui-twitter
+						button.btn.btn-block.btn-social-pinterest.mbm
+							i.fui-pinterest
+					h4.mvl(style="font-size:33px;font-family:wisdom_scriptregular") Share
+					button#social.btn.btn-huge.btn-primary(style="width:100%") 
+						| Share
+				div.span8.main.pull-right.mtl
+					div.lead.mvl(style="font-family:wisdom_scriptregular;font-size:45px;line-height:45px") About Onyx Coffee Bar
+					hr
+					p(style="margin-bottom:50px") Hi there! I'm the founder of Aggregus.com, and when I'm not buried in code trying to keep the site from crashing, I'm drinking my favorite Unibroue beer, reading Wallace Stevens, and trying to curb my obsession with Ridiculous Fishing. But that's never going to happen...
+					div.lead.mvl(style="font-family:wisdom_scriptregular;font-size:45px;margin-top:30px") Reviews
+					hr
+					ul.media-list(style="margin-bottom:50px")
+						li.media
+							a.pull-left(href="#")
+								img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/18090903/profileimgs/1376502804938.jpg")
+							div.media-body
+								h6.media-heading Sarah was absolutely amazing!
+								p.mbn Sarah was wonderful. She sang us songs and we had a great time. Her CD is on auto-play in my apartment non-stop.
+								i.icon-home
+								| Reviewed as Host
+						li.media
+							a.pull-left(href="#")
+								img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/RyanMiller16899724/profileimgs/1374531530346.jpg")
+							div.media-body
+								h6.media-heading Well howdy-do!
+								p.mbn Now that's what I call a voice! Nice job Sarah, we had a great time!
+								i.icon-user
+								| Reviewed as Guest
+						li.media
+							a.pull-left(href="#")
+								img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/18090903/profileimgs/1376502804938.jpg")
+							div.media-body
+								h6.media-heading Sarah was absolutely amazing!
+								p.mbn Sarah was wonderful. She sang us songs and we had a great time. Her CD is on auto-play in my apartment non-stop.
+								i.icon-home
+								| Reviewed as Host
+						li.media
+							a.pull-left(href="#")
+								img.img-circle.media-object(height="60", width="60",src="https://d2qjfe4gq0m6av.cloudfront.net/experiences/RyanMiller16899724/profileimgs/1374531530346.jpg")
+							div.media-body
+								h6.media-heading Well howdy-do!
+								p.mbn Now that's what I call a voice! Nice job Sarah, we had a great time!
+								i.icon-user
+								| Reviewed as Guest
+					div.lead.mvl(style="font-family:wisdom_scriptregular;font-size:45px;margin-top:30px") Photos
+					hr
+					div#photos.carousel.slide
+						ol.carousel-indicators
+							li.active(data-target="photos", data-slide-to="0")
+							li(data-target="photos", data-slide-to="1")
+						div.carousel-inner
+							div.active.item
+								img(src="http://s9.postimg.org/ky8vuxpsv/Thing.jpg")
+							div.item
+								img(src="http://sailbeach.com/user/cimage/Beach-House.jpg")
+						a.carousel-control.fui-arrow-left.left(href="#photos", data-slide="prev")
+						a.carousel-control.fui-arrow-right.right(href="#photos", data-slide="next")
+					div.lead.mvl(style="font-family:wisdom_scriptregular;font-size:45px;margin-top:50px") Video
+					hr
+					div.span8.flex-video.widescreen
+						iframe(src="//www.youtube.com/embed/tv6lzSuTHhs", frameborder="", allowfullscreen)
+		p.footer-buffer
+		div.bottom-menu.bottom-menu-inverse
+			div.container
+				div.row
+					div.brand.span2 Aggregus
+					div.span8
+						ul.bottom-links
+							li
+								a Learn More
+							li
+								a Careers
+							li
+								a Privacy
+							li
+								a Terms
 
-<div id="header"></div>
-
-<div id="main"></div>
-
-<div id="modal"></div>
-
-<div id="footer"></div>
-
-<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-41060605-1', 'aggregus.com');ga('send', 'pageview');</script>
-
-</body>
-
-</html>
+					div.span2
+						ul.bottom-icons
+							li
+								a.fui-facebook
+							li
+								a.fui-twitter
+							li
+								a.fui-pinterest

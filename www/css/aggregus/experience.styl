@@ -1,12 +1,104 @@
-.side-bar
-	position absolute
-	left 0
-	top 0
-	width 250px
-	height 300%
-	background-color red
+@media (max-width: 767px)
+	.experience
+		.control-group
+			margin-bottom 10px
 
-.main
-	margin-right 250px
-	float right
-	width 100%
+.experience
+	.span3
+		&.booker
+			.lead
+				margin-top: -10px
+				margin-bottom 0px
+				font-size 40px
+		&.community
+			.image
+				height 225px
+				border-radius 6px
+				border  2px solid #FAFAFA
+				box-shadow  0 1px 2px rgb(34, 25, 25)
+				box-shadow  0 1px 2px rgba(34, 25, 25, 0.4)
+				position relative
+				text-align center
+				.footer
+					background-color rgba(100,236,255,0.85)
+					padding 10px
+					font-family wisdom_scriptregular
+					color white
+					border-radius 4px 4px 0 0 
+					.title
+						font-size 30px
+					.desc
+						font-size 15px
+						font-family 'Lato'
+				button
+					position relative
+					top 150px
+	.span9
+		.hero-unit
+			height 200px
+			background-size cover
+			background-position center
+			.box
+				height 200px 
+				width 200px
+				padding 5px
+				position relative
+				border-radius 105px
+				margin -10px 0 0 -105px
+				z-index 3
+				&.phone
+					left 50%
+				&.desktop
+					left 20%
+				.img
+					background-size cover
+					border-radius 100px
+					position absolute
+					position relative
+					z-index 4
+					height 200px
+					width 200px
+		.header
+			margin 0px 0 20px 0
+		.details
+			margin-bottom 5px
+			h4
+				font-size 35px
+				sup
+					margin-left -40px
+					i
+						font-size 35px
+						color #64ecff
+		.lead
+			font-size 35px
+
+#map
+	height 200px
+	width 98%
+	margin-bottom 10px
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+  margin-left 0px
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
