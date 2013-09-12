@@ -22,3 +22,4 @@ secrets.js
 .DS_Store
 debug.js
 test_model.js
+*/*.kate-swp
