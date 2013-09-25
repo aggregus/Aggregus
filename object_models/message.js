@@ -31,6 +31,8 @@ var MessageByRecipient = dynamodb.model(
     MessageSchema
 );
 
+module.exports.prefix = prefix;
+
 module.exports.Message = Message;
 module.exports.MessageBySender = MessageBySender;
 module.exports.MessageByRecipient = MessageByRecipient;

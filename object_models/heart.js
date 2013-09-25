@@ -8,12 +8,7 @@
  * collision is more likely there.
  */
 var HeartSchema = new Schema({
-    _id: { //RangeKey
-        type: Number,
-        required: true,
-        default: Date.now()
-    },
-    creator: {
+    user: {
         type: Number,
         required: true,
         ref: 'User'
@@ -23,16 +18,21 @@ var HeartSchema = new Schema({
         required: true,
         ref: 'Experience'
     },
+    _created: { //RangeKey
+        type: Number,
+        index: true,
+        default: Date.now()
+    }
 });
 
 var HeartByCreator = dynamodb.model(
     "HeartByCreator",
-    {hash: 'creator', range: '_id'},
+    {hash: 'user', range: 'experience'},
     HeartSchema
 );
 var HeartByExperience = dynamodb.model(
     "HeartByExperience",
-    {hash: 'experience', range: '_id'},
+    {hash: 'experience', range: 'user'},
     HeartSchema
 );
 

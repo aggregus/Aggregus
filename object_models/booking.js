@@ -36,5 +36,6 @@ var BookingSchema = new Schema({
 
 var Booking  = dynamodb.model("Booking",{hash: '_id'}, BookingSchema);
 
+module.exports.prefix = prefix;
 module.exports.Booking = Booking;
 module.exports.BookingSchema = BookingSchema;

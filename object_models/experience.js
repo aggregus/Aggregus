@@ -203,6 +203,7 @@ var ExperienceDatesSchema = new Schema({
     },
 });
 
+module.exports.prefix = prefix;
 
 module.exports.Experience = Experience;
 module.exports.ExperienceSchema = ExperienceSchema;

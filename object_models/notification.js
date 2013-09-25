@@ -22,5 +22,7 @@ var NotificationSchema = new Schema({
 
 var Notification = dynamodb.model("Notification",{hash: '_id'}, NotificationSchema);
 
+module.exports.prefix = prefix;
+
 module.exports.Notification = Notification;
 module.exports.NotificationSchema = NotificationSchema;

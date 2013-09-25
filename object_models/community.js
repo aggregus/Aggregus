@@ -47,49 +47,51 @@ var Community = function Community(data){
     });
 };
 
-Community.prototype.insert = function insert(){
-    function tryCommunity(self, tryCount){
-        if(!tryCount) tryCount = 0;
-        
-        self.community.insert(function(res,err){
-            if(!err){
-                if(tryCount > 0){
-                    // have to go back and fix communityName
-                    self.
-                }
-            }else{
-                switch(err.code){
-                    case "ConditionalCheckFailedException":
-                        // duplicate ID, we can try this again
-                        if(tryCount < 2){
-                            tryCommunity(self, tryCount + 1);
-                        }
-                        break;
-                    case "ThrottlingException":
-                        // TODO error handling
-                        break;
-                    case "IncompleteSignatureException":
-                    case "InternalFailureException":
-                    case "ServiceUnavailableException":
-                    default:
-                        // TODO error handling
-                };
-            }
-        });
-    }
-    
-    this.communityName.insert(function(res,err){
-        if(!err){
-            this
-            });
-        }else{
-            switch(err.code){
-                case "ConditionalCheckFailedException":
-            // TODO name error
-            }
-        }
-    });
-};
+// Community.prototype.insert = function insert(){
+//     function tryCommunity(self, tryCount){
+//         if(!tryCount) tryCount = 0;
+//         
+//         self.community.insert(function(res,err){
+//             if(!err){
+//                 if(tryCount > 0){
+//                     // have to go back and fix communityName
+//                     //self.
+//                 }
+//             }else{
+//                 switch(err.code){
+//                     case "ConditionalCheckFailedException":
+//                         // duplicate ID, we can try this again
+//                         if(tryCount < 2){
+//                             tryCommunity(self, tryCount + 1);
+//                         }
+//                         break;
+//                     case "ThrottlingException":
+//                         // TODO error handling
+//                         break;
+//                     case "IncompleteSignatureException":
+//                     case "InternalFailureException":
+//                     case "ServiceUnavailableException":
+//                     default:
+//                         // TODO error handling
+//                 };
+//             }
+//         });
+//     }
+//     
+//     this.communityName.insert(function(res,err){
+//         if(!err){
+//             this
+//             });
+//         }else{
+//             switch(err.code){
+//                 case "ConditionalCheckFailedException":
+//             // TODO name error
+//             }
+//         }
+//     });
+// };
+
+module.exports.prefix = prefix;
 
 module.exports.CommunityMaster = CommunityMaster;
 module.exports.CommunityNameSchema = CommunityNameSchema;
